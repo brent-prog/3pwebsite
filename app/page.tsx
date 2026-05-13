@@ -16,6 +16,10 @@ import {
   Menu,
   TrendingUp,
   ShieldCheck,
+  BookOpen,
+  Building2,
+  Headphones,
+  Handshake,
 } from "lucide-react";
 
 const proof = [
@@ -24,6 +28,38 @@ const proof = [
   "20-100% YoY profitability improvement across consulting engagements",
   "300 leaders trained with 100% participant satisfaction",
   "Post-acquisition integration leadership across people, technology, operations, and culture",
+];
+
+const fit = [
+  "Your leadership team is working hard, but not working from the same playbook.",
+  "Growth has created complexity your current operating model cannot handle.",
+  "Customer experience, delivery consistency, or profitability is slipping.",
+  "Your tools, SOPs, processes, and data exist, but they are not trusted or used consistently.",
+  "You have completed an acquisition and need practical integration leadership.",
+  "You know something is off, but need a clear diagnosis and action plan.",
+];
+
+const audiences = [
+  {
+    icon: Headphones,
+    title: "CX & Contact Centre Teams",
+    text: "Improve customer experience, service consistency, leadership rhythm, workforce performance, and technology use.",
+  },
+  {
+    icon: Building2,
+    title: "BPO & Outsourcing Operators",
+    text: "Align people, product, and profit across complex client programs, delivery teams, and performance targets.",
+  },
+  {
+    icon: TrendingUp,
+    title: "PE-backed / Founder-led Service Businesses",
+    text: "Create structure, accountability, and operating discipline as the business grows beyond founder-led execution.",
+  },
+  {
+    icon: Handshake,
+    title: "Post-Acquisition Teams",
+    text: "Build the integration roadmap, align leadership, clarify workstreams, and keep execution moving.",
+  },
 ];
 
 const services = [
@@ -59,15 +95,6 @@ const services = [
   },
 ];
 
-const fit = [
-  "Your leadership team is working hard, but not working from the same playbook.",
-  "Growth has created complexity your current operating model cannot handle.",
-  "Customer experience, delivery consistency, or profitability is slipping.",
-  "Your tools, SOPs, processes, and data exist, but they are not trusted or used consistently.",
-  "You have completed an acquisition and need practical integration leadership.",
-  "You know something is off, but need a clear diagnosis and action plan.",
-];
-
 const assessmentSteps = [
   "Current-state assessment",
   "Priority gap list",
@@ -91,17 +118,7 @@ function LinkedInIcon() {
   );
 }
 
-function SocialIconLink({
-  href,
-  label,
-  dark = false,
-  children,
-}: {
-  href: string;
-  label: string;
-  dark?: boolean;
-  children: ReactNode;
-}) {
+function SocialIconLink({ href, label, dark = false, children }: { href: string; label: string; dark?: boolean; children: ReactNode }) {
   const className = dark
     ? "flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition hover:border-cyan-300 hover:bg-cyan-400 hover:text-slate-950"
     : "flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-900 transition hover:border-cyan-500 hover:bg-cyan-50 hover:text-cyan-700";
@@ -119,7 +136,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
           <a href="#top" className="flex items-center gap-3" aria-label="3P Solutions home">
-            <Image src="/3p-logo.png" alt="3P Solutions logo" width={48} height={48} className="h-12 w-auto" priority />
+            <Image src="/3p-logo.png" alt="3P Solutions logo" width={56} height={56} className="h-12 w-auto" priority />
             <div>
               <p className="text-sm font-black tracking-wide text-slate-950">3P SOLUTIONS</p>
               <p className="text-xs text-slate-500">Founded by Brent Pattison</p>
@@ -127,18 +144,14 @@ export default function Home() {
           </a>
 
           <nav className="hidden items-center gap-7 text-sm font-semibold text-slate-700 md:flex" aria-label="Main navigation">
+            <a href="#who" className="hover:text-cyan-700">Who I Help</a>
             <a href="#services" className="hover:text-cyan-700">Services</a>
             <a href="#framework" className="hover:text-cyan-700">3P Framework</a>
             <a href="#proof" className="hover:text-cyan-700">Proof</a>
             <a href="#about" className="hover:text-cyan-700">About</a>
           </nav>
 
-          <a
-            href="https://calendly.com/brent3p/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden items-center gap-2 rounded-full bg-cyan-600 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-cyan-700 sm:inline-flex"
-          >
+          <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="hidden items-center gap-2 rounded-full bg-cyan-600 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-cyan-700 sm:inline-flex">
             Book a fit call <ArrowRight className="h-4 w-4" />
           </a>
 
@@ -157,22 +170,13 @@ export default function Home() {
               Find and fix the operational gaps slowing growth, margin, and customer experience.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700 md:text-xl">
-              Practical advisory support for CEOs and executive teams of service businesses navigating growth,
-              change, integration, and performance improvement.
+              Practical advisory support for CEOs and executive teams of service businesses navigating growth, change, integration, and performance improvement.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="https://calendly.com/brent3p/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-base font-bold text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800"
-              >
+              <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-base font-bold text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800">
                 Book a 30-minute fit call <ArrowRight className="h-5 w-5" />
               </a>
-              <a
-                href="#review"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700"
-              >
+              <a href="#review" className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700">
                 Start with an alignment review
               </a>
             </div>
@@ -181,12 +185,8 @@ export default function Home() {
               <a href="mailto:brent@3psolutions.ca" className="inline-flex items-center gap-2 hover:text-cyan-700"><Mail className="h-4 w-4 text-cyan-700" /> brent@3psolutions.ca</a>
               <a href="tel:+15198352374" className="inline-flex items-center gap-2 hover:text-cyan-700"><Phone className="h-4 w-4 text-cyan-700" /> (519) 835-2374</a>
               <div className="flex items-center gap-2">
-                <SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn">
-                  <LinkedInIcon />
-                </SocialIconLink>
-                <SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X">
-                  <XIcon />
-                </SocialIconLink>
+                <SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn"><LinkedInIcon /></SocialIconLink>
+                <SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X"><XIcon /></SocialIconLink>
               </div>
             </div>
           </div>
@@ -208,41 +208,61 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <section id="who" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
         <div className="max-w-3xl">
-          <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">How I help</p>
-          <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Practical support for businesses that need traction, not theory.</h2>
-          <p className="mt-5 text-lg leading-8 text-slate-700">
-            The front-door offer is the 3P Operational Alignment Review. From there, support can expand into
-            strategic planning, operating rhythm, leadership development, CX/BPO improvement, or fractional COO
-            execution.
-          </p>
+          <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Who I help</p>
+          <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Built for service businesses where execution depends on people, process, technology, and trust.</h2>
         </div>
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => {
-            const Icon = service.icon;
+        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          {audiences.map((audience) => {
+            const Icon = audience.icon;
             return (
-              <div key={service.title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/10">
+              <div key={audience.title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-50 text-cyan-700">
                   <Icon className="h-7 w-7" />
                 </div>
-                <h3 className="text-xl font-black text-slate-950">{service.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-700">{service.text}</p>
+                <h3 className="text-xl font-black text-slate-950">{audience.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-700">{audience.text}</p>
               </div>
             );
           })}
         </div>
       </section>
 
-      <section id="review" className="bg-white py-20">
+      <section id="services" className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">How I help</p>
+            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Practical support for businesses that need traction, not theory.</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-700">
+              The front-door offer is the 3P Operational Alignment Review. From there, support can expand into strategic planning, operating rhythm, leadership development, CX/BPO improvement, or fractional COO execution.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => {
+              const Icon = service.icon;
+              return (
+                <div key={service.title} className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/10">
+                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-50 text-cyan-700">
+                    <Icon className="h-7 w-7" />
+                  </div>
+                  <h3 className="text-xl font-black text-slate-950">{service.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-slate-700">{service.text}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section id="review" className="bg-slate-50 py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="grid gap-8 rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8 lg:grid-cols-[0.95fr_1.05fr] lg:p-10">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-800">Fast-start offer</p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 md:text-5xl">3P Operational Alignment Review</h2>
               <p className="mt-5 text-lg leading-8 text-slate-700">
-                A focused diagnostic engagement to identify the biggest gaps across leadership, customer experience,
-                process execution, technology use, performance metrics, and financial impact.
+                A focused diagnostic engagement to identify the biggest gaps across leadership, customer experience, process execution, technology use, performance metrics, and financial impact.
               </p>
             </div>
             <div className="rounded-3xl bg-white p-6 shadow-sm">
@@ -255,12 +275,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <a
-                href="https://calendly.com/brent3p/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-7 inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800"
-              >
+              <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800">
                 Talk about the review <ArrowRight className="h-4 w-4" />
               </a>
             </div>
@@ -273,13 +288,12 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">The 3P Framework</p>
-              <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">
-                The 3Ps of Business need leadership and management alignment underneath them.
-              </h2>
+              <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">The 3Ps of Business need leadership and management alignment underneath them.</h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                People, Product, and Profit are the business outcomes. They are supported by the 3Ps of Leadership
-                and executed through the 3Ps of Management. The 3Px3P Matrix shows where those systems are aligned,
-                where they are weak, and where leaders need to act.
+                People create the employee experience. Product is the full customer experience. Profit is the owner experience and the fuel that keeps the business moving. The job of leadership and management is to keep all three aligned.
+              </p>
+              <p className="mt-5 text-lg leading-8 text-slate-300">
+                The 3Px3P Matrix shows where those systems are aligned, where they are weak, and where leaders need to act.
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-3">
@@ -302,36 +316,18 @@ export default function Home() {
             <div className="rounded-3xl border border-white/10 bg-white/10 p-6">
               <p className="text-sm font-black uppercase tracking-[0.18em] text-cyan-300">Supported by the 3Ps of Leadership</p>
               <div className="mt-5 grid gap-4 md:grid-cols-3">
-                <div className="rounded-2xl bg-slate-900 p-4">
-                  <h4 className="font-black text-white">Purpose</h4>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">Why the business exists and where it is going.</p>
-                </div>
-                <div className="rounded-2xl bg-slate-900 p-4">
-                  <h4 className="font-black text-white">Principles</h4>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">How decisions are made and which behaviours are expected.</p>
-                </div>
-                <div className="rounded-2xl bg-slate-900 p-4">
-                  <h4 className="font-black text-white">Progress</h4>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">How the organization knows it is moving in the right direction.</p>
-                </div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Purpose</h4><p className="mt-2 text-sm leading-6 text-slate-300">Why the business exists and where it is going.</p></div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Principles</h4><p className="mt-2 text-sm leading-6 text-slate-300">How decisions are made and which behaviours are expected.</p></div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Progress</h4><p className="mt-2 text-sm leading-6 text-slate-300">How the organization knows it is moving in the right direction.</p></div>
               </div>
             </div>
 
             <div className="rounded-3xl border border-cyan-400/30 bg-cyan-400/10 p-6">
               <p className="text-sm font-black uppercase tracking-[0.18em] text-cyan-300">Executed through the 3Ps of Management</p>
               <div className="mt-5 grid gap-4 md:grid-cols-3">
-                <div className="rounded-2xl bg-slate-900 p-4">
-                  <h4 className="font-black text-white">Planning</h4>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">Goals, priorities, roles, resources, and decision-making.</p>
-                </div>
-                <div className="rounded-2xl bg-slate-900 p-4">
-                  <h4 className="font-black text-white">Processes</h4>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">Workflows, SOPs, systems, handoffs, tools, and execution.</p>
-                </div>
-                <div className="rounded-2xl bg-slate-900 p-4">
-                  <h4 className="font-black text-white">Performance</h4>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">KPIs, scorecards, accountability, and review rhythm.</p>
-                </div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Planning</h4><p className="mt-2 text-sm leading-6 text-slate-300">Goals, priorities, roles, resources, and decision-making.</p></div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Processes</h4><p className="mt-2 text-sm leading-6 text-slate-300">Workflows, SOPs, systems, handoffs, tools, and execution.</p></div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Performance</h4><p className="mt-2 text-sm leading-6 text-slate-300">KPIs, scorecards, accountability, and review rhythm.</p></div>
               </div>
             </div>
           </div>
@@ -339,38 +335,26 @@ export default function Home() {
           <div className="mt-12 overflow-hidden rounded-3xl border border-white/10 bg-white text-slate-950 shadow-2xl shadow-black/20">
             <div className="border-b border-slate-200 bg-slate-100 px-6 py-5">
               <h3 className="text-2xl font-black">The 3Px3P Matrix</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                A practical diagnostic for testing whether Planning, Processes, and Performance Measurement properly
-                support People, Product, and Profit.
-              </p>
+              <p className="mt-2 text-sm leading-6 text-slate-600">A practical diagnostic for testing whether Planning, Processes, and Performance Measurement properly support People, Product, and Profit.</p>
             </div>
             <div className="grid text-sm md:grid-cols-4">
               <div className="hidden bg-slate-950 p-4 font-black text-white md:block">Management Support</div>
               <div className="bg-cyan-50 p-4 font-black text-cyan-900">People</div>
               <div className="bg-cyan-50 p-4 font-black text-cyan-900">Product</div>
               <div className="bg-cyan-50 p-4 font-black text-cyan-900">Profit</div>
-
               <div className="bg-slate-100 p-4 font-black">Planning</div>
               <div className="p-4 leading-6 text-slate-700">Right roles, capacity, leadership priorities, and talent plans.</div>
               <div className="p-4 leading-6 text-slate-700">Clear customer journey, service promise, and delivery expectations.</div>
               <div className="p-4 leading-6 text-slate-700">Plans tied to margin, cash flow, growth, and owner return.</div>
-
               <div className="bg-slate-100 p-4 font-black">Processes</div>
               <div className="p-4 leading-6 text-slate-700">Clear workflows, coaching, tools, SOPs, and support systems.</div>
               <div className="p-4 leading-6 text-slate-700">Consistent delivery, handoffs, quality controls, and customer outcomes.</div>
               <div className="p-4 leading-6 text-slate-700">Controlled pricing, cost, billing, revenue, and financial routines.</div>
-
               <div className="bg-slate-100 p-4 font-black">Performance</div>
               <div className="p-4 leading-6 text-slate-700">People measured on the right behaviours, capability, and outcomes.</div>
               <div className="p-4 leading-6 text-slate-700">Customer outcomes tracked, reviewed, and acted on consistently.</div>
               <div className="p-4 leading-6 text-slate-700">Financial measures driving informed and accountable decisions.</div>
             </div>
-          </div>
-
-          <div className="mt-12 rounded-3xl border border-cyan-400/30 bg-cyan-400/10 p-6">
-            <p className="text-base font-bold text-cyan-100">
-              Delivered through: 3P Alignment Assessment | 3Px3P Matrix | PRAISE Coaching Methodology | Strategic Planning Facilitation
-            </p>
           </div>
         </div>
       </section>
@@ -381,8 +365,7 @@ export default function Home() {
             <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Relevant proof</p>
             <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Operator credibility, not consultant theatre.</h2>
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              Brent has sat in the chair: carrying the P&L, building teams, leading integrations, improving
-              performance, and helping leaders make decisions with real consequences.
+              Brent has sat in the chair: carrying the P&L, building teams, leading integrations, improving performance, and helping leaders make decisions with real consequences.
             </p>
           </div>
           <div className="space-y-4">
@@ -406,28 +389,34 @@ export default function Home() {
           <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
             <h3 className="text-2xl font-black text-slate-950">I have sat in the chair.</h3>
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              I work with CEOs and executive teams as an operator&apos;s consultant: someone who has managed the P&amp;L,
-              built the teams, carried accountability for execution, and lived through the consequences of operational misalignment.
+              I started in front-line customer service and grew into global executive leadership. I have built teams, carried the P&L, supported Fortune 100 client relationships, led major operational change, and managed people infrastructure at global scale.
             </p>
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              My consulting work focuses on BPO and CX operations, PE-backed or founder-led service businesses,
-              technology-enabled service companies, post-acquisition integration, leadership development, and
-              practical operating systems that help businesses scale without losing control.
+              My consulting work focuses on BPO and CX operations, PE-backed or founder-led service businesses, technology-enabled service companies, post-acquisition integration, leadership development, and practical operating systems that help businesses scale without losing control.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
-              <div className="rounded-2xl bg-cyan-50 p-5">
-                <TrendingUp className="h-7 w-7 text-cyan-700" />
-                <p className="mt-3 font-black">Growth</p>
-              </div>
-              <div className="rounded-2xl bg-cyan-50 p-5">
-                <ShieldCheck className="h-7 w-7 text-cyan-700" />
-                <p className="mt-3 font-black">Accountability</p>
-              </div>
-              <div className="rounded-2xl bg-cyan-50 p-5">
-                <CalendarDays className="h-7 w-7 text-cyan-700" />
-                <p className="mt-3 font-black">Execution</p>
-              </div>
+              <div className="rounded-2xl bg-cyan-50 p-5"><TrendingUp className="h-7 w-7 text-cyan-700" /><p className="mt-3 font-black">Growth</p></div>
+              <div className="rounded-2xl bg-cyan-50 p-5"><ShieldCheck className="h-7 w-7 text-cyan-700" /><p className="mt-3 font-black">Accountability</p></div>
+              <div className="rounded-2xl bg-cyan-50 p-5"><CalendarDays className="h-7 w-7 text-cyan-700" /><p className="mt-3 font-black">Execution</p></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="praise" className="bg-cyan-50 py-20">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+          <div className="rounded-[2rem] bg-white p-8 shadow-sm">
+            <BookOpen className="h-12 w-12 text-cyan-700" />
+            <h2 className="mt-6 text-3xl font-black tracking-tight text-slate-950">PRAISE Coaching Methodology</h2>
+            <p className="mt-4 text-slate-700">A practical leadership system for improving specific behaviours, closing the loop, and building performance culture.</p>
+          </div>
+          <div className="rounded-[2rem] border border-cyan-200 bg-white p-8 shadow-sm">
+            <p className="text-lg leading-8 text-slate-700">
+              Brent is the author of <span className="font-bold text-slate-950">PRAISE: The Cornerstone of Coaching to Success</span> and creator of the PRAISE coaching methodology. The approach helps managers prepare for coaching, present feedback clearly, and follow up with specific praise when the right behaviours are demonstrated.
+            </p>
+            <a href="https://www.amazon.com/s?k=PRAISE+The+Cornerstone+of+Coaching+to+Success+Brent+Pattison" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800">
+              View the book <ArrowRight className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </section>
@@ -440,36 +429,21 @@ export default function Home() {
             If you know something is off but need a practical operator to diagnose it and move it forward, book a 30-minute fit call.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="https://calendly.com/brent3p/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 transition hover:bg-cyan-400"
-            >
+            <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 transition hover:bg-cyan-400">
               Book on Calendly <ArrowRight className="h-5 w-5" />
             </a>
-            <a
-              href="mailto:brent@3psolutions.ca?subject=30-minute%20fit%20call&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20book%20a%2030-minute%20fit%20call.%0A%0AThanks%2C"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10"
-            >
+            <a href="mailto:brent@3psolutions.ca?subject=30-minute%20fit%20call&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20book%20a%2030-minute%20fit%20call.%0A%0AThanks%2C" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">
               Email Brent <Mail className="h-5 w-5" />
             </a>
-            <a
-              href="tel:+15198352374"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10"
-            >
+            <a href="tel:+15198352374" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">
               Call 519-835-2374 <Phone className="h-5 w-5" />
             </a>
           </div>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-300">
             <a href="https://3psolutions.ca" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300">3psolutions.ca</a>
             <div className="flex items-center gap-3">
-              <SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn" dark>
-                <LinkedInIcon />
-              </SocialIconLink>
-              <SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X" dark>
-                <XIcon />
-              </SocialIconLink>
+              <SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn" dark><LinkedInIcon /></SocialIconLink>
+              <SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X" dark><XIcon /></SocialIconLink>
             </div>
           </div>
         </div>
