@@ -25,6 +25,14 @@ const posts = [
     href: "/blog/3px3p-matrix-business-alignment",
     image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_52 PM (3).png",
   },
+  {
+    title: "Building a Better Contact Centre Operating Model",
+    date: "2026-06-08",
+    summary:
+      "Whether internal, outsourced, or hybrid, better CX starts with alignment across customer journeys, people, processes, technology, data, and trusted knowledge.",
+    href: "/blog/building-a-better-contact-centre-operating-model",
+    image: "/blog/from_chaos_to_organized_clarity.png",
+  },
 ];
 
 export default function BlogPage() {
@@ -58,13 +66,13 @@ export default function BlogPage() {
               key={post.title}
               className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/10"
             >
-             <Link href={post.href}>
-              <img
-                src={post.image}
-                alt=""
-                className="mb-6 aspect-video w-full rounded-2xl object-cover"
+              <Link href={post.href}>
+                <img
+                  src={post.image}
+                  alt=""
+                  className="mb-6 aspect-video w-full rounded-2xl object-cover"
                 />
-              </Link> 
+              </Link>
               <p className="text-sm font-semibold text-slate-500">{post.date}</p>
               <h2 className="mt-3 text-2xl font-black text-slate-950">
                 <Link href={post.href} className="hover:text-cyan-700">
