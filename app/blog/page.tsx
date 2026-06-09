@@ -2,20 +2,12 @@ import Link from "next/link";
 
 const posts = [
   {
-    title: "AI Isn’t Broken. Untrusted Knowledge Is.",
+    title: "Building a Better Contact Centre Operating Model",
     date: "2026-06-08",
     summary:
-      "Most AI projects do not fail because the model is bad. They fail because the business knowledge underneath the model is outdated, inconsistent, incomplete, or untrusted.",
-    href: "/blog/ai-isnt-broken-untrusted-knowledge-is",
-    image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_51 PM (1).png",
-  },
-  {
-    title: "Why SOPs Fail Before AI Ever Gets Involved",
-    date: "2026-06-08",
-    summary:
-      "SOPs do not create consistency if teams do not trust them, use them, or maintain them. AI only makes that problem louder.",
-    href: "/blog/why-sops-fail-before-ai",
-    image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_51 PM (2).png",
+      "Whether internal, outsourced, or hybrid, better CX starts with alignment across customer journeys, people, processes, technology, data, and trusted knowledge.",
+    href: "/blog/building-a-better-contact-centre-operating-model",
+    image: "/blog/from_chaos_to_organized_clarity.png",
   },
   {
     title: "The 3Px3P Matrix: A Practical Way to Diagnose Business Alignment",
@@ -26,12 +18,20 @@ const posts = [
     image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_52 PM (3).png",
   },
   {
-    title: "Building a Better Contact Centre Operating Model",
+    title: "Why SOPs Fail Before AI Ever Gets Involved",
     date: "2026-06-08",
     summary:
-      "Whether internal, outsourced, or hybrid, better CX starts with alignment across customer journeys, people, processes, technology, data, and trusted knowledge.",
-    href: "/blog/building-a-better-contact-centre-operating-model",
-    image: "/blog/from_chaos_to_organized_clarity.png",
+      "SOPs do not create consistency if teams do not trust them, use them, or maintain them. AI only makes that problem louder.",
+    href: "/blog/why-sops-fail-before-ai",
+    image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_51 PM (2).png",
+  },
+  {
+    title: "AI Isn’t Broken. Untrusted Knowledge Is.",
+    date: "2026-06-08",
+    summary:
+      "Most AI projects do not fail because the model is bad. They fail because the business knowledge underneath the model is outdated, inconsistent, incomplete, or untrusted.",
+    href: "/blog/ai-isnt-broken-untrusted-knowledge-is",
+    image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_51 PM (1).png",
   },
 ];
 
