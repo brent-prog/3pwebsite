@@ -27,7 +27,7 @@ export default function ArticlePage() {
           className="mt-10 aspect-video w-full rounded-3xl object-cover shadow-xl shadow-slate-900/10"
         />
 
-        <div className="prose prose-slate mt-12 max-w-none prose-headings:font-black prose-headings:text-slate-950 prose-p:text-lg prose-p:leading-8 prose-li:text-lg prose-li:leading-8">
+        <div className="mt-12 max-w-none text-slate-700 [&_h2]:mb-5 [&_h2]:mt-12 [&_h2]:text-3xl [&_h2]:font-black [&_h2]:tracking-tight [&_h2]:text-slate-950 [&_li]:mb-2 [&_li]:ml-6 [&_li]:list-disc [&_li]:text-lg [&_li]:leading-8 [&_p]:mb-6 [&_p]:text-lg [&_p]:leading-8 [&_ul]:mb-8 [&_ul]:mt-3">
           <p>Most SOP problems are not writing problems.</p>
 
           <p>They are trust problems.</p>
