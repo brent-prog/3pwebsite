@@ -1,5 +1,5 @@
 import Link from "next/link";
-import heroImage from "./heroImage";
+import heroImage, { inlineImage } from "./heroImage";
 
 export default function ArticlePage() {
   return (
@@ -18,7 +18,7 @@ export default function ArticlePage() {
         </h1>
 
         <p className="mt-6 text-lg leading-8 text-slate-700">
-          A stronger business supports better people. Better-supported people create better customer experiences. Better customer experiences create healthier profit.
+          A stronger business supports its people better. Better-supported people create better customer experiences. Better customer experiences create healthier profit.
         </p>
 
         <img
@@ -67,6 +67,12 @@ export default function ArticlePage() {
           <p>AI will not fix a business that is already unclear, inconsistent, or poorly documented.</p>
 
           <p>It will only make the confusion move faster.</p>
+
+          <img
+            src={inlineImage}
+            alt="A 3P business graphic showing People, Product, and Profit as the foundation for stronger business and smarter use of AI."
+            className="my-12 aspect-video w-full rounded-3xl object-cover shadow-xl shadow-slate-900/10"
+          />
 
           <h2>People come first does not mean profit does not matter</h2>
 
@@ -255,7 +261,7 @@ export default function ArticlePage() {
 
           <p>The goal is to make the business stronger.</p>
 
-          <p>A stronger business supports better people.</p>
+          <p>A stronger business supports its people better.</p>
 
           <p>Better-supported people create a better product.</p>
 
