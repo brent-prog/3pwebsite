@@ -6,7 +6,7 @@ const posts = [
     title: "People Come First. Even in an AI-Ready Business.",
     date: "2026-06-09",
     summary:
-      "AI-readiness is really business-readiness. A stronger business supports better people, better customer experiences, and healthier profit.",
+      "AI-readiness is really business-readiness. A stronger business supports its people better, creates better customer experiences, and drives healthier profit.",
     href: "/blog/people-first-even-in-an-ai-ready-business",
     image: peopleFirstHeroImage,
   },
