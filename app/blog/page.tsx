@@ -1,6 +1,15 @@
 import Link from "next/link";
+import peopleFirstHeroImage from "./people-first-even-in-an-ai-ready-business/heroImage";
 
 const posts = [
+  {
+    title: "People Come First. Even in an AI-Ready Business.",
+    date: "2026-06-09",
+    summary:
+      "AI-readiness is really business-readiness. A stronger business supports better people, better customer experiences, and healthier profit.",
+    href: "/blog/people-first-even-in-an-ai-ready-business",
+    image: peopleFirstHeroImage,
+  },
   {
     title: "Building a Better Contact Centre Operating Model",
     date: "2026-06-08",
