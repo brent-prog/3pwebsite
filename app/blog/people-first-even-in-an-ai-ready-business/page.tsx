@@ -1,5 +1,4 @@
 import Link from "next/link";
-import heroImage, { inlineImage } from "./heroImage";
 
 export default function ArticlePage() {
   return (
@@ -22,8 +21,8 @@ export default function ArticlePage() {
         </p>
 
         <img
-          src={heroImage}
-          alt="A 3D business alignment graphic showing chaos becoming organized around People, Product, Profit, Planning, Processes, and Performance."
+          src="/blog/people-first-ai-ready-business-hero.svg"
+          alt="A business alignment graphic showing chaos becoming organized around People, Product, Profit, Planning, Processes, and Performance."
           className="mt-10 aspect-video w-full rounded-3xl object-cover shadow-xl shadow-slate-900/10"
         />
 
@@ -69,7 +68,7 @@ export default function ArticlePage() {
           <p>It will only make the confusion move faster.</p>
 
           <img
-            src={inlineImage}
+            src="/blog/people-first-ai-ready-business-inline.svg"
             alt="A 3P business graphic showing People, Product, and Profit as the foundation for stronger business and smarter use of AI."
             className="my-12 aspect-video w-full rounded-3xl object-cover shadow-xl shadow-slate-900/10"
           />
