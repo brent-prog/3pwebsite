@@ -185,6 +185,7 @@ export default function Home() {
             <a href="#services" className="hover:text-cyan-700">Services</a>
             <a href="#framework" className="hover:text-cyan-700">3P Framework</a>
             <a href="#proof" className="hover:text-cyan-700">Proof</a>
+            <a href="/blog" className="hover:text-cyan-700">Blog</a>
           </nav>
 
           <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="hidden items-center gap-2 rounded-full bg-cyan-600 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-cyan-700 sm:inline-flex">
@@ -205,6 +206,7 @@ export default function Home() {
               <a href="#review" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Assessment</a>
               <a href="#framework" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">3P Framework</a>
               <a href="#proof" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Proof</a>
+              <a href="/blog" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Blog</a>
               <a href="#about" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">About</a>
               <a href="#praise" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">PRAISE</a>
               <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-cyan-600 px-5 py-3 text-white transition hover:bg-cyan-700">
