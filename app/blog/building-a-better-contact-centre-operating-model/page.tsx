@@ -27,7 +27,7 @@ export default function ArticlePage() {
           className="mt-10 aspect-video w-full rounded-3xl object-cover shadow-xl shadow-slate-900/10"
         />
 
-        <div className="mt-12 max-w-none text-slate-700 [&_h2]:mb-5 [&_h2]:mt-12 [&_h2]:text-3xl [&_h2]:font-black [&_h2]:tracking-tight [&_h2]:text-slate-950 [&_li]:mb-2 [&_li]:ml-6 [&_li]:list-disc [&_li]:text-lg [&_li]:leading-8 [&_p]:mb-6 [&_p]:text-lg [&_p]:leading-8 [&_ul]:mb-8 [&_ul]:mt-3">
+        <div className="mt-12 max-w-none text-slate-700 [&_a]:font-bold [&_a]:text-cyan-700 [&_a]:underline [&_a]:underline-offset-4 [&_h2]:mb-5 [&_h2]:mt-12 [&_h2]:text-3xl [&_h2]:font-black [&_h2]:tracking-tight [&_h2]:text-slate-950 [&_li]:mb-2 [&_li]:ml-6 [&_li]:list-disc [&_li]:text-lg [&_li]:leading-8 [&_p]:mb-6 [&_p]:text-lg [&_p]:leading-8 [&_ul]:mb-8 [&_ul]:mt-3">
           <p>
             After decades of continuous enhancement of customer experience strategies, billions invested
             in CX outsourcing partners, massive improvements in recruiting and training processes,
@@ -35,17 +35,22 @@ export default function ArticlePage() {
             solutions promising to improve every step of the customer and employee journey...
           </p>
 
-          <p>CX may finally be showing signs of improvement.</p>
-
-          <p>But let’s not get too excited yet.</p>
+          <p>CX is still under pressure.</p>
 
           <p>
-            According to Forrester’s 2026 Customer Experience Index, CX improved in North America,
-            while Europe remained mostly stable and Asia Pacific was more mixed. Globally, 20% of
-            brands improved, 8% declined, and 72% were statistically unchanged.
+            According to{" "}
+            <a
+              href="https://www.forrester.com/press-newsroom/forrester-global-customer-experience-index-2025-rankings/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Forrester’s 2025 Global Customer Experience Index rankings
+            </a>
+            , CX hit an all-time low in North America, while Europe made some gains and Asia Pacific
+            struggled. Globally, 21% of brands declined, 6% improved, and 73% remained statistically unchanged.
           </p>
 
-          <p>So yes, there may be progress.</p>
+          <p>So yes, there may be pockets of progress.</p>
 
           <p>But most brands are still stuck.</p>
 
