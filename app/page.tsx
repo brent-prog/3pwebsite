@@ -444,7 +444,7 @@ export default function Home() {
   >
     View on Amazon.com <ArrowRight className="h-4 w-4" />
   </a>
-</div>
+
         </div>
       </section>
 
