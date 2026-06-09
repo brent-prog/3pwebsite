@@ -1,21 +1,19 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "3P Solutions | Brent Pattison",
+  metadataBase: new URL("https://3psolutions.ca"),
+  title: "3P Solutions | AI-Readiness & Operational Alignment",
   description:
-    "Practical advisory support for CEOs and executive teams of service businesses navigating growth, change, integration, and performance improvement.",
+    "3P Solutions helps service businesses restore trust in the knowledge, SOPs, data, processes, and operating systems that AI, analytics, CX, and leadership decisions depend on.",
   icons: {
     icon: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "3P Solutions | Brent Pattison",
-    description: "Find and fix the operational gaps slowing growth, margin, and customer experience.",
+    title: "3P Solutions | AI-Readiness & Operational Alignment",
+    description: "AI is not broken. Untrusted knowledge is.",
     type: "website",
     images: ["/3p-logo.png"],
   },
@@ -24,7 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
