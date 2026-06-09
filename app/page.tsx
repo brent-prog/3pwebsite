@@ -425,7 +425,26 @@ export default function Home() {
       <section id="praise" className="bg-cyan-50 py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
           <div className="rounded-[2rem] bg-white p-8 shadow-sm"><BookOpen className="h-12 w-12 text-cyan-700" /><h2 className="mt-6 text-3xl font-black tracking-tight text-slate-950">PRAISE Coaching Methodology</h2><p className="mt-4 text-slate-700">A practical leadership system for improving specific behaviours, closing the loop, and building performance culture.</p></div>
-          <div className="rounded-[2rem] border border-cyan-200 bg-white p-8 shadow-sm"><p className="text-lg leading-8 text-slate-700">Brent is the author of <span className="font-bold text-slate-950">PRAISE: The Cornerstone of Coaching to Success</span> and creator of the PRAISE coaching methodology. The approach helps managers prepare for coaching, present feedback clearly, and follow up with specific praise when the right behaviours are demonstrated.</p><a href="https://www.amazon.ca/PRAISE-Cornerstone-Coaching-Supervisors-Managers-ebook/dp/B0D4NSM7BP" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800">View the book <ArrowRight className="h-4 w-4" /></a></div>
+          <div className="rounded-[2rem] border border-cyan-200 bg-white p-8 shadow-sm"><p className="text-lg leading-8 text-slate-700">Brent is the author of <span className="font-bold text-slate-950">PRAISE: The Cornerstone of Coaching to Success</span> and creator of the PRAISE coaching methodology. The approach helps managers prepare for coaching, present feedback clearly, and follow up with specific praise when the right behaviours are demonstrated.</p>
+        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+  <a
+    href="https://www.amazon.ca/PRAISE-Cornerstone-Coaching-Supervisors-Managers-ebook/dp/B0D4NSM7BP"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800"
+  >
+    View on Amazon.ca <ArrowRight className="h-4 w-4" />
+  </a>
+
+  <a
+    href="https://a.co/d/0fd8oGsX"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700"
+  >
+    View on Amazon.com <ArrowRight className="h-4 w-4" />
+  </a>
+</div>
         </div>
       </section>
 
