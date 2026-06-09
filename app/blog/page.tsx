@@ -1,5 +1,4 @@
 import Link from "next/link";
-import peopleFirstHeroImage from "./people-first-even-in-an-ai-ready-business/heroImage";
 
 const posts = [
   {
@@ -8,7 +7,7 @@ const posts = [
     summary:
       "AI-readiness is really business-readiness. A stronger business supports its people better, creates better customer experiences, and drives healthier profit.",
     href: "/blog/people-first-even-in-an-ai-ready-business",
-    image: peopleFirstHeroImage,
+    image: "/blog/people-first-ai-ready-business-hero.svg",
   },
   {
     title: "Building a Better Contact Centre Operating Model",
