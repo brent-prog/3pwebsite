@@ -4,12 +4,12 @@ const nextConfig = {
     return [
       {
         source: "/services",
-        destination: "/#services",
+        destination: "/#product",
         permanent: true,
       },
       {
         source: "/the-3ps",
-        destination: "/#framework",
+        destination: "/#about",
         permanent: true,
       },
       {
@@ -18,18 +18,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/books-courses",
-        destination: "/#praise",
-        permanent: true,
-      },
-      {
-        source: "/blogs",
-        destination: "/#readiness",
-        permanent: true,
-      },
-      {
         source: "/contact",
-        destination: "/#contact",
+        destination: "/#pilot",
         permanent: true,
       },
     ];
