@@ -3,20 +3,18 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://3psolutions.ca"),
-  title: "3P Solutions | AI-Readiness & Operational Alignment",
-  description:
-    "3P Solutions helps service businesses restore trust in the knowledge, SOPs, data, processes, and operating systems that AI, analytics, CX, and leadership decisions depend on.",
+  metadataBase: new URL("https://completeloop.io"),
+  title: "CompleteLoop | Coaching Documentation as Operational Signal",
+  description: "CompleteLoop helps managers document coaching, verify follow-up, and reveal repeat training, process, and knowledge gaps.",
   icons: {
-    icon: "/favicon.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/favicon.png"
   },
   openGraph: {
-    title: "3P Solutions | AI-Readiness & Operational Alignment",
-    description: "AI is not broken. Untrusted knowledge is.",
+    title: "CompleteLoop | Coaching Documentation as Operational Signal",
+    description: "Turn everyday coaching into the signal that shows why execution problems keep repeating.",
     type: "website",
-    images: ["/3p-logo.png"],
-  },
+    images: ["/favicon.png"]
+  }
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
