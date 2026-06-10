@@ -229,7 +229,7 @@ export default function Home() {
               AI isn&apos;t broken. Untrusted knowledge is.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700 md:text-xl">
-              3P Solutions helps CX, contact centre, BPO, and service business leaders find the operational gaps in knowledge, SOPs, data, processes, and technology before investing more money in AI, analytics, automation, or CX platforms.
+              3P Solutions helps Customer Experience (CX), contact centre, BPO, and service business leaders find the operational gaps in knowledge, SOPs, data, processes, and technology before investing more money in AI, analytics, automation, or CX platforms.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-base font-bold text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800">
