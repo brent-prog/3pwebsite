@@ -31,12 +31,12 @@ import {
 } from "lucide-react";
 
 const fit = [
-  "You want to use AI, but you do not trust the knowledge, SOPs, data, or workflows underneath it.",
+  "You want to use AI, automation, analytics, or contact centre technology, but you do not trust the knowledge, SOPs, data, or workflows underneath it.",
   "Teams use different answers, different processes, or different definitions of success.",
   "Your SOPs exist, but they are outdated, ignored, duplicated, or hard to find.",
   "CX, analytics, and leadership decisions are being made from inconsistent or incomplete information.",
   "Growth, acquisition, or technology change has exposed gaps in how the business actually runs.",
-  "You need a practical assessment before investing more money in AI tools, automation, or dashboards.",
+  "You need a practical assessment before investing more money in AI tools, automation, dashboards, or CX platforms.",
 ];
 
 const trustGaps = [
@@ -66,7 +66,7 @@ const audiences = [
   {
     icon: Headphones,
     title: "CX & Contact Centre Teams",
-    text: "Create trusted knowledge, consistent service processes, and reliable CX data before deploying AI, analytics, or automation.",
+    text: "Create trusted knowledge, consistent service processes, and reliable CX data before deploying AI, analytics, automation, or new contact centre technology.",
   },
   {
     icon: Building2,
@@ -88,8 +88,8 @@ const audiences = [
 const services = [
   {
     icon: BrainCircuit,
-    title: "AI-Readiness & Operational Alignment Review",
-    text: "A focused diagnostic to determine whether your business knowledge, SOPs, data, metrics, and workflows are trusted enough to support AI, analytics, CX, and better leadership decisions.",
+    title: "CX / AI Technology Gap Review",
+    text: "A focused diagnostic to identify the business problem, desired outcome, operating gaps, and technology-readiness issues before buying more AI, analytics, automation, or CX tools.",
   },
   {
     icon: ClipboardCheck,
@@ -119,9 +119,10 @@ const services = [
 ];
 
 const reviewOutputs = [
+  "Business problem and desired outcome clarification",
   "AI-readiness and trusted knowledge gap assessment",
-  "SOP, process, and data alignment findings",
-  "CX and decision-risk map",
+  "SOP, process, data, and KPI alignment findings",
+  "CX, technology, and decision-risk map",
   "Priority gap list with practical next steps",
   "30/60/90-day readiness roadmap",
   "Executive readout with recommended actions",
@@ -189,7 +190,7 @@ export default function Home() {
           </nav>
 
           <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="hidden items-center gap-2 rounded-full bg-cyan-600 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-cyan-700 sm:inline-flex">
-            Book a fit call <ArrowRight className="h-4 w-4" />
+            Book a CX gap review <ArrowRight className="h-4 w-4" />
           </a>
 
           <button type="button" onClick={() => setMobileMenuOpen((open) => !open)} className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-cyan-500 hover:text-cyan-700 md:hidden" aria-label={mobileMenuOpen ? "Close menu" : "Open menu"} aria-expanded={mobileMenuOpen}>
@@ -210,7 +211,7 @@ export default function Home() {
               <a href="#about" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">About</a>
               <a href="#praise" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">PRAISE</a>
               <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-cyan-600 px-5 py-3 text-white transition hover:bg-cyan-700">
-                Book a fit call <ArrowRight className="h-4 w-4" />
+                Book a CX gap review <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </nav>
@@ -222,20 +223,20 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 text-sm font-bold text-cyan-800">
-              <BrainCircuit className="h-4 w-4" /> AI-Readiness | CX Operations | Trusted Knowledge | Executive Advisory
+              <BrainCircuit className="h-4 w-4" /> AI-Readiness | CX Technology | Contact Centres | Trusted Knowledge
             </div>
             <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-tight text-slate-950 md:text-6xl">
               AI isn&apos;t broken. Untrusted knowledge is.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700 md:text-xl">
-              3P Solutions helps service businesses restore trust in the knowledge, SOPs, data, processes, and operating systems that AI, analytics, CX, and leadership decisions depend on.
+              3P Solutions helps CX, contact centre, BPO, and service business leaders find the operational gaps in knowledge, SOPs, data, processes, and technology before investing more money in AI, analytics, automation, or CX platforms.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-base font-bold text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800">
-                Book a 30-minute fit call <ArrowRight className="h-5 w-5" />
+                Book a CX gap review <ArrowRight className="h-5 w-5" />
               </a>
               <a href="#review" className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700">
-                Start with an AI-readiness review
+                Review the fast-start offer
               </a>
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-slate-600">
@@ -252,7 +253,7 @@ export default function Home() {
           <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-2xl shadow-slate-900/10">
             <div className="rounded-[1.5rem] bg-slate-950 p-6 text-white">
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">Good fit when</p>
-              <h2 className="mt-3 text-2xl font-black">You want AI, analytics, and CX decisions to work, but the operating knowledge underneath them can&apos;t be trusted.</h2>
+              <h2 className="mt-3 text-2xl font-black">You want AI, analytics, automation, or CX technology to work, but the operating knowledge underneath it can&apos;t be trusted.</h2>
             </div>
             <div className="mt-6 space-y-4">
               {fit.map((item) => (
@@ -271,7 +272,7 @@ export default function Home() {
           <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">AI-readiness starts here</p>
           <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">AI only works when the business knowledge behind it can be trusted.</h2>
           <p className="mt-5 text-lg leading-8 text-slate-700">
-            If SOPs are outdated, teams follow different processes, data is inconsistent, or performance measures do not match reality, AI will only automate confusion. The first step is not buying another tool. It is assessing whether the business is ready to use one.
+            If SOPs are outdated, teams follow different processes, data is inconsistent, or performance measures do not match reality, AI will only automate confusion. The first step is not buying another tool, platform, or vendor. It is assessing whether the business is ready to use one.
           </p>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -315,9 +316,9 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">How I help</p>
-            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Practical support for businesses that need AI-readiness, alignment, and traction.</h2>
+            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Practical support for businesses that need AI-readiness, alignment, and traction before buying more technology.</h2>
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              The front-door offer is the AI-Readiness & Operational Alignment Review. From there, support can expand into trusted knowledge cleanup, strategic planning, operating rhythm, leadership development, CX/BPO improvement, or fractional COO execution.
+              The front-door offer is the CX / AI Technology Gap Review. From there, support can expand into trusted knowledge cleanup, strategic planning, operating rhythm, leadership development, CX/BPO improvement, or fractional COO execution.
             </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -340,9 +341,9 @@ export default function Home() {
           <div className="grid gap-8 rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8 lg:grid-cols-[0.95fr_1.05fr] lg:p-10">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-800">Fast-start offer</p>
-              <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 md:text-5xl">3P AI-Readiness & Operational Alignment Review</h2>
+              <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 md:text-5xl">3P CX / AI Technology Gap Review</h2>
               <p className="mt-5 text-lg leading-8 text-slate-700">
-                A focused diagnostic to determine whether your knowledge, SOPs, processes, data, metrics, and operating systems are trusted enough to support AI, analytics, CX improvement, and better leadership decisions.
+                A focused diagnostic to clarify the business problem, define the desired outcome, and determine whether your knowledge, SOPs, processes, data, metrics, and operating systems are ready to support AI, analytics, CX improvement, automation, or new technology investment.
               </p>
             </div>
             <div className="rounded-3xl bg-white p-6 shadow-sm">
@@ -439,7 +440,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="bg-slate-950 py-20 text-white">
-        <div className="mx-auto max-w-4xl px-5 text-center lg:px-8"><p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Next step</p><h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">Let&apos;s find out if I can help.</h2><p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">If your AI, analytics, CX, or leadership decisions depend on knowledge you do not fully trust, book a 30-minute fit call.</p><div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"><a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 transition hover:bg-cyan-400">Book on Calendly <ArrowRight className="h-5 w-5" /></a><a href="mailto:brent@3psolutions.ca?subject=30-minute%20fit%20call&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20book%20a%2030-minute%20fit%20call.%0A%0AThanks%2C" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Email Brent <Mail className="h-5 w-5" /></a><a href="tel:+15198352374" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Call 519-835-2374 <Phone className="h-5 w-5" /></a></div><div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-300"><a href="https://3psolutions.ca" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300">3psolutions.ca</a><div className="flex items-center gap-3"><SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn" dark><LinkedInIcon /></SocialIconLink><SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X" dark><XIcon /></SocialIconLink></div></div></div>
+        <div className="mx-auto max-w-4xl px-5 text-center lg:px-8"><p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Next step</p><h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">Let&apos;s find out if I can help.</h2><p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">If your AI, analytics, CX, technology, or leadership decisions depend on knowledge you do not fully trust, book a 30-minute fit call.</p><div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"><a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 transition hover:bg-cyan-400">Book on Calendly <ArrowRight className="h-5 w-5" /></a><a href="mailto:brent@3psolutions.ca?subject=30-minute%20fit%20call&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20book%20a%2030-minute%20fit%20call.%0A%0AThanks%2C" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Email Brent <Mail className="h-5 w-5" /></a><a href="tel:+15198352374" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Call 519-835-2374 <Phone className="h-5 w-5" /></a></div><div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-300"><a href="https://3psolutions.ca" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300">3psolutions.ca</a><div className="flex items-center gap-3"><SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn" dark><LinkedInIcon /></SocialIconLink><SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X" dark><XIcon /></SocialIconLink></div></div></div>
       </section>
 
       <footer className="border-t border-slate-800 bg-slate-950 px-5 py-8 text-sm text-slate-400 lg:px-8">
