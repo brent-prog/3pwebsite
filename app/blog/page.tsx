@@ -35,10 +35,10 @@ const posts = [
     image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_51 PM (2).png",
   },
   {
-    title: "AI Isn’t Broken. Untrusted Knowledge Is.",
-    date: "2026-06-08",
+    title: "AI Isn't Broken. Broken Knowledge and Unclear Objectives Are.",
+    date: "2026-06-09",
     summary:
-      "Most AI projects do not fail because the model is bad. They fail because the business knowledge underneath the model is outdated, inconsistent, incomplete, or untrusted.",
+      "AI only creates value when it is aimed at a real business problem, measured against a clear outcome, supported by a practical implementation plan, and grounded in trusted knowledge.",
     href: "/blog/ai-isnt-broken-untrusted-knowledge-is",
     image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_51 PM (1).png",
   },
