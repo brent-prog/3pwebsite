@@ -98,6 +98,28 @@ export default function BlogPage() {
             </article>
           ))}
         </div>
+
+        <section className="mt-12 rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8 shadow-sm">
+          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div className="max-w-2xl">
+              <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-800">
+                Practical next step
+              </p>
+              <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950">
+                Considering AI, automation, analytics, or contact centre technology?
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                Start by finding the operational gaps that could hold back the investment.
+              </p>
+            </div>
+            <Link
+              href="/cx-ai-technology-gap-review"
+              className="inline-flex shrink-0 items-center justify-center rounded-full bg-slate-950 px-6 py-4 text-base font-black text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800"
+            >
+              Start with a Gap Review
+            </Link>
+          </div>
+        </section>
       </section>
     </main>
   );
