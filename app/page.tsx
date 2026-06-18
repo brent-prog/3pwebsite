@@ -190,7 +190,7 @@ export default function Home() {
           </nav>
 
           <a href="/cx-ai-technology-gap-review" className="hidden items-center gap-2 rounded-full bg-cyan-600 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-cyan-700 sm:inline-flex">
-            Book a Gap Review Call <ArrowRight className="h-4 w-4" />
+            Start with a Gap Review <ArrowRight className="h-4 w-4" />
           </a>
 
           <button type="button" onClick={() => setMobileMenuOpen((open) => !open)} className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-cyan-500 hover:text-cyan-700 md:hidden" aria-label={mobileMenuOpen ? "Close menu" : "Open menu"} aria-expanded={mobileMenuOpen}>
@@ -211,7 +211,7 @@ export default function Home() {
               <a href="#about" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">About</a>
               <a href="#praise" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">PRAISE</a>
               <a href="/cx-ai-technology-gap-review" onClick={closeMobileMenu} className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-cyan-600 px-5 py-3 text-white transition hover:bg-cyan-700">
-                Book a Gap Review Call <ArrowRight className="h-4 w-4" />
+                Start with a Gap Review <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </nav>
@@ -233,10 +233,10 @@ export default function Home() {
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a href="/cx-ai-technology-gap-review" className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-base font-bold text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800">
-                Book a Gap Review Call <ArrowRight className="h-5 w-5" />
+                Start with a Gap Review <ArrowRight className="h-5 w-5" />
               </a>
-              <a href="/cx-ai-technology-gap-review" className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700">
-                Review the Gap Review
+              <a href="/blog/building-a-better-contact-centre-operating-model" className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700">
+                Read the Contact Centre Playbook
               </a>
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-slate-600">
@@ -440,7 +440,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="bg-slate-950 py-20 text-white">
-        <div className="mx-auto max-w-4xl px-5 text-center lg:px-8"><p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Next step</p><h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">Let&apos;s find out if I can help.</h2><p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">If your AI, analytics, CX, technology, or leadership decisions depend on knowledge you do not fully trust, book a 30-minute fit call.</p><div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"><a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 transition hover:bg-cyan-400">Book on Calendly <ArrowRight className="h-5 w-5" /></a><a href="mailto:brent@3psolutions.ca?subject=30-minute%20fit%20call&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20book%20a%2030-minute%20fit%20call.%0A%0AThanks%2C" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Email Brent <Mail className="h-5 w-5" /></a><a href="tel:+15198352374" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Call 519-835-2374 <Phone className="h-5 w-5" /></a></div><div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-300"><a href="https://3psolutions.ca" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300">3psolutions.ca</a><div className="flex items-center gap-3"><SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn" dark><LinkedInIcon /></SocialIconLink><SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X" dark><XIcon /></SocialIconLink></div></div></div>
+        <div className="mx-auto max-w-4xl px-5 text-center lg:px-8"><p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Next step</p><h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">Let&apos;s find out if I can help.</h2><p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">If your AI, analytics, CX, technology, or leadership decisions depend on knowledge you do not fully trust, book a 30-minute fit call.</p><div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"><a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 transition hover:bg-cyan-400">Book the Gap Review Call <ArrowRight className="h-5 w-5" /></a><a href="mailto:brent@3psolutions.ca?subject=30-minute%20fit%20call&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20book%20a%2030-minute%20fit%20call.%0A%0AThanks%2C" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Email Brent <Mail className="h-5 w-5" /></a><a href="tel:+15198352374" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Call 519-835-2374 <Phone className="h-5 w-5" /></a></div><div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-300"><a href="https://3psolutions.ca" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300">3psolutions.ca</a><div className="flex items-center gap-3"><SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn" dark><LinkedInIcon /></SocialIconLink><SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X" dark><XIcon /></SocialIconLink></div></div></div>
       </section>
 
       <footer className="border-t border-slate-800 bg-slate-950 px-5 py-8 text-sm text-slate-400 lg:px-8">
