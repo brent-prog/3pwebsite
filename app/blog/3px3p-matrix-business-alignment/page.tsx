@@ -23,7 +23,7 @@ export default function ArticlePage() {
 
         <img
           src="/blog/ChatGPT Image Jun 8, 2026, 10_22_52 PM (3).png"
-          alt=""
+          alt="3Px3P business alignment matrix article illustration"
           className="mt-10 aspect-video w-full rounded-3xl object-cover shadow-xl shadow-slate-900/10"
         />
 
