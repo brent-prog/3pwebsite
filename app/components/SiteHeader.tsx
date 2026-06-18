@@ -54,7 +54,7 @@ export default function SiteHeader() {
           href="/cx-ai-technology-gap-review"
           className="hidden items-center gap-2 rounded-full bg-cyan-600 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-cyan-700 sm:inline-flex"
         >
-          Book a Gap Review Call <ArrowRight className="h-4 w-4" />
+          Start with a Gap Review <ArrowRight className="h-4 w-4" />
         </a>
 
         <button
@@ -142,7 +142,7 @@ export default function SiteHeader() {
               onClick={closeMobileMenu}
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-cyan-600 px-5 py-3 text-white transition hover:bg-cyan-700"
             >
-              Book a Gap Review Call <ArrowRight className="h-4 w-4" />
+              Start with a Gap Review <ArrowRight className="h-4 w-4" />
             </a>
           </div>
         </nav>
