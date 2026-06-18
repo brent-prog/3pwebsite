@@ -114,15 +114,15 @@ export default function CxAiTechnologyGapReviewPage() {
                 href="https://calendly.com/brent3p/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-base font-black text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:bg-cyan-400"
               >
-                Book a Gap Review Call <ArrowRight className="h-5 w-5" />
+                Book the Gap Review Call <ArrowRight className="h-5 w-5" />
               </a>
               <Link
                 href="/blog/building-a-better-contact-centre-operating-model"
                 className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-black text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700"
               >
-                Read the Contact Centre Operating Model Article
+                Read the Contact Centre Playbook
               </Link>
             </div>
           </div>
@@ -291,9 +291,9 @@ export default function CxAiTechnologyGapReviewPage() {
               href="https://calendly.com/brent3p/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 transition hover:bg-cyan-400"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:bg-cyan-400"
             >
-              Book a Gap Review Call <ArrowRight className="h-5 w-5" />
+              Book the Gap Review Call <ArrowRight className="h-5 w-5" />
             </a>
           </div>
         </div>
