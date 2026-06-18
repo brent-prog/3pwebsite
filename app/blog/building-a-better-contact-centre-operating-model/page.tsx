@@ -23,7 +23,7 @@ export default function ArticlePage() {
 
         <img
           src="/blog/from_chaos_to_organized_clarity.png"
-          alt=""
+          alt="Customer contact centre operating model article illustration"
           className="mt-10 aspect-video w-full rounded-3xl object-cover shadow-xl shadow-slate-900/10"
         />
 
