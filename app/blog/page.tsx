@@ -1,5 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import peopleFirstHeroImage from "./people-first-even-in-an-ai-ready-business/heroImage";
+
+export const metadata: Metadata = {
+  title: "CX, AI Readiness and Business Alignment Articles | 3P Solutions",
+  description:
+    "Practical articles on CX, contact centre operating models, AI readiness, SOPs, trusted knowledge, BPO performance, and business alignment.",
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "CX, AI Readiness and Business Alignment Articles | 3P Solutions",
+    description:
+      "Practical articles on CX, contact centre operating models, AI readiness, SOPs, trusted knowledge, BPO performance, and business alignment.",
+    url: "/blog",
+    siteName: "3P Solutions",
+    type: "website",
+    images: [
+      {
+        url: "/3p-logo.png",
+        alt: "3P Solutions logo",
+      },
+    ],
+  },
+};
 
 const posts = [
   {
@@ -9,6 +33,7 @@ const posts = [
       "AI-readiness is really business-readiness. A stronger business supports its people better, creates better customer experiences, and drives healthier profit.",
     href: "/blog/people-first-even-in-an-ai-ready-business",
     image: peopleFirstHeroImage,
+    imageAlt: "People-first AI-ready business article illustration",
   },
   {
     title: "Building a Better Contact Centre Operating Model",
@@ -17,6 +42,7 @@ const posts = [
       "Whether internal, outsourced, or hybrid, better CX starts with alignment across customer journeys, people, processes, technology, data, and trusted knowledge.",
     href: "/blog/building-a-better-contact-centre-operating-model",
     image: "/blog/from_chaos_to_organized_clarity.png",
+    imageAlt: "Customer contact centre operating model article illustration",
   },
   {
     title: "The 3Px3P Matrix: A Practical Way to Diagnose Business Alignment",
@@ -25,6 +51,7 @@ const posts = [
       "People, Product, and Profit need to be supported by Planning, Processes, and Performance Measurement. The 3Px3P Matrix shows where the business is aligned and where it is not.",
     href: "/blog/3px3p-matrix-business-alignment",
     image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_52 PM (3).png",
+    imageAlt: "3Px3P business alignment matrix article illustration",
   },
   {
     title: "Why SOPs Fail Before AI Ever Gets Involved",
@@ -33,6 +60,7 @@ const posts = [
       "SOPs do not create consistency if teams do not trust them, use them, or maintain them. AI only makes that problem louder.",
     href: "/blog/why-sops-fail-before-ai",
     image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_51 PM (2).png",
+    imageAlt: "SOP readiness before AI article illustration",
   },
   {
     title: "AI Isn't Broken. Broken Knowledge and Unclear Objectives Are.",
@@ -41,6 +69,7 @@ const posts = [
       "AI only creates value when it is aimed at a real business problem, measured against a clear outcome, supported by a practical implementation plan, and grounded in trusted knowledge.",
     href: "/blog/ai-isnt-broken-untrusted-knowledge-is",
     image: "/blog/ChatGPT Image Jun 8, 2026, 10_22_51 PM (1).png",
+    imageAlt: "AI readiness and trusted knowledge article illustration",
   },
 ];
 
@@ -78,7 +107,7 @@ export default function BlogPage() {
               <Link href={post.href}>
                 <img
                   src={post.image}
-                  alt=""
+                  alt={post.imageAlt}
                   className="mb-6 aspect-video w-full rounded-2xl object-cover"
                 />
               </Link>
