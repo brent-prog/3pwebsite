@@ -27,7 +27,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CX / AI Technology Gap Review | 3P Solutions",
     description:
-      "Find the operational gaps that can hold back CX improvement, contact centre optimization, BPO performance, and AI implementation.",
+      "Assess whether your CX, contact centre, BPO, knowledge, process, reporting, and technology environment is ready for AI and operational improvement.",
+    url: "/cx-ai-technology-gap-review",
+    siteName: "3P Solutions",
     type: "website",
     images: ["/3p-logo.png"],
   },
