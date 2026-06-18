@@ -1,8 +1,15 @@
 # 3P Solutions Website
 
-A clean, single-page Next.js website for 3P Solutions / Brent Pattison, designed for deployment from GitHub to Vercel.
+Live Next.js website for 3P Solutions / Brent Pattison, deployed through Vercel.
 
-## Quick start
+## Framework
+
+- Next.js App Router
+- React
+- Tailwind CSS
+- Vercel deployment from GitHub
+
+## Local development
 
 ```bash
 npm install
@@ -11,31 +18,25 @@ npm run dev
 
 Open `http://localhost:3000`.
 
-## Deploy to Vercel
+## Build
 
-1. Create a new GitHub repository.
-2. Upload or push these project files to the repository.
-3. Go to Vercel and choose **Add New Project**.
-4. Import the GitHub repository.
-5. Keep the default settings:
-   - Framework Preset: Next.js
-   - Build Command: `next build`
-   - Output Directory: leave blank
-6. Click **Deploy**.
-
-## Edit content
-
-Most of the homepage copy lives in:
-
-```text
-app/page.tsx
+```bash
+npm run build
 ```
 
-Update email, phone, service copy, and CTAs directly there.
+## Main routes
 
-## Recommended next improvements
+- `/`
+- `/blog`
+- `/cx-ai-technology-gap-review`
+- `/blog/people-first-even-in-an-ai-ready-business`
+- `/blog/building-a-better-contact-centre-operating-model`
+- `/blog/3px3p-matrix-business-alignment`
+- `/blog/why-sops-fail-before-ai`
+- `/blog/ai-isnt-broken-untrusted-knowledge-is`
 
-- Replace the simple `3P` text mark with the real 3P logo in `/public`.
-- Add a real scheduling link to the CTA buttons, such as Calendly, HubSpot Meetings, or another booking page.
-- Add analytics after publishing, such as Vercel Analytics, Plausible, or Google Analytics.
-- Add a downloadable one-pager PDF link once the final PDF is ready.
+The primary commercial offer page is `/cx-ai-technology-gap-review`.
+
+## Deployment
+
+Production deploys through Vercel from the connected GitHub repository.
