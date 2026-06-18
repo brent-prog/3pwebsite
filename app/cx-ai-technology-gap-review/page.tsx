@@ -95,7 +95,7 @@ export default function CxAiTechnologyGapReviewPage() {
       <SiteHeader />
 
       <section className="bg-white">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-24">
+        <div className="mx-auto grid max-w-7xl gap-12 px-5 pt-20 pb-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pt-24 lg:pb-12">
           <div>
             <p className="inline-flex rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 text-sm font-black text-cyan-800">
               Primary paid diagnostic
@@ -125,6 +125,12 @@ export default function CxAiTechnologyGapReviewPage() {
                 Read the Contact Centre Playbook
               </Link>
             </div>
+            <Link
+              href="#what-gets-reviewed"
+              className="mt-6 inline-flex text-sm font-black text-cyan-700 transition hover:text-cyan-900"
+            >
+              What gets reviewed ↓
+            </Link>
           </div>
 
           <div className="rounded-[2rem] border border-cyan-200 bg-cyan-50 p-6 shadow-sm">
@@ -151,21 +157,23 @@ export default function CxAiTechnologyGapReviewPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <div>
-            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Why this matters</p>
-            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">
-              Most AI and CX technology projects do not fail because the tool is bad.
-            </h2>
-          </div>
-          <div className="text-lg leading-8 text-slate-700">
-            <p>
-              They fail because the business problem is unclear, the process is messy, the knowledge is unreliable, the reporting is weak, or the teams are misaligned.
-            </p>
-            <p className="mt-5">
-              AI readiness depends on operational readiness. If the operation is not clear, measurable, owned, and trusted, new technology usually adds speed to the confusion.
-            </p>
+      <section className="bg-cyan-50/70 py-14 lg:py-16">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Why this matters</p>
+              <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">
+                Most AI and CX technology projects do not fail because the tool is bad.
+              </h2>
+            </div>
+            <div className="text-lg leading-8 text-slate-700">
+              <p>
+                They fail because the business problem is unclear, the process is messy, the knowledge is unreliable, the reporting is weak, or the teams are misaligned.
+              </p>
+              <p className="mt-5">
+                AI readiness depends on operational readiness. If the operation is not clear, measurable, owned, and trusted, new technology usually adds speed to the confusion.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -199,7 +207,7 @@ export default function CxAiTechnologyGapReviewPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <section id="what-gets-reviewed" className="mx-auto max-w-7xl scroll-mt-24 px-5 py-20 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">What gets reviewed</p>
           <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">
