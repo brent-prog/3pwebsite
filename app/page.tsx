@@ -189,8 +189,8 @@ export default function Home() {
             <a href="/blog" className="hover:text-cyan-700">Blog</a>
           </nav>
 
-          <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="hidden items-center gap-2 rounded-full bg-cyan-600 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-cyan-700 sm:inline-flex">
-            Book a CX gap review <ArrowRight className="h-4 w-4" />
+          <a href="/cx-ai-technology-gap-review" className="hidden items-center gap-2 rounded-full bg-cyan-600 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-cyan-700 sm:inline-flex">
+            Book a Gap Review Call <ArrowRight className="h-4 w-4" />
           </a>
 
           <button type="button" onClick={() => setMobileMenuOpen((open) => !open)} className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-cyan-500 hover:text-cyan-700 md:hidden" aria-label={mobileMenuOpen ? "Close menu" : "Open menu"} aria-expanded={mobileMenuOpen}>
@@ -210,8 +210,8 @@ export default function Home() {
               <a href="/blog" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Blog</a>
               <a href="#about" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">About</a>
               <a href="#praise" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">PRAISE</a>
-              <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-cyan-600 px-5 py-3 text-white transition hover:bg-cyan-700">
-                Book a CX gap review <ArrowRight className="h-4 w-4" />
+              <a href="/cx-ai-technology-gap-review" onClick={closeMobileMenu} className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-cyan-600 px-5 py-3 text-white transition hover:bg-cyan-700">
+                Book a Gap Review Call <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </nav>
@@ -232,11 +232,11 @@ export default function Home() {
               3P Solutions helps Customer Experience (CX), contact centre, BPO, and service business leaders find the operational gaps in knowledge, SOPs, data, processes, and technology before investing more money in AI, analytics, automation, or CX platforms.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-              <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-base font-bold text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800">
-                Book a CX gap review <ArrowRight className="h-5 w-5" />
+              <a href="/cx-ai-technology-gap-review" className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-base font-bold text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800">
+                Book a Gap Review Call <ArrowRight className="h-5 w-5" />
               </a>
-              <a href="#review" className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700">
-                Review the fast-start offer
+              <a href="/cx-ai-technology-gap-review" className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700">
+                Review the Gap Review
               </a>
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-slate-600">
@@ -353,8 +353,8 @@ export default function Home() {
                   <div key={step} className="flex items-center gap-3"><CheckCircle2 className="h-5 w-5 flex-none text-cyan-600" /><p className="font-semibold text-slate-800">{step}</p></div>
                 ))}
               </div>
-              <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800">
-                Talk about the review <ArrowRight className="h-4 w-4" />
+              <a href="/cx-ai-technology-gap-review" className="mt-7 inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800">
+                Start with a Gap Review <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </div>
