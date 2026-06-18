@@ -3,19 +3,30 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://3psolutions.ca"),
-  title: "3P Solutions | AI-Readiness & Operational Alignment",
+  metadataBase: new URL("https://www.3psolutions.ca"),
+  title: "3P Solutions | AI-Readiness Through Operational Alignment",
   description:
-    "3P Solutions helps service businesses restore trust in the knowledge, SOPs, data, processes, and operating systems that AI, analytics, CX, and leadership decisions depend on.",
+    "3P Solutions helps CX, contact centre, BPO, and service business leaders align people, process, technology, knowledge, and performance measurement before investing in AI or automation.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "3P Solutions | AI-Readiness & Operational Alignment",
-    description: "AI is not broken. Untrusted knowledge is.",
+    title: "3P Solutions | AI-Readiness Through Operational Alignment",
+    description:
+      "3P Solutions helps CX, contact centre, BPO, and service business leaders align people, process, technology, knowledge, and performance measurement before investing in AI or automation.",
+    url: "/",
+    siteName: "3P Solutions",
     type: "website",
-    images: ["/3p-logo.png"],
+    images: [
+      {
+        url: "/3p-logo.png",
+        alt: "3P Solutions logo",
+      },
+    ],
   },
 };
 
