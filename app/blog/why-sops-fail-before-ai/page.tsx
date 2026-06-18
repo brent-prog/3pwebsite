@@ -23,7 +23,7 @@ export default function ArticlePage() {
 
         <img
           src="/blog/ChatGPT Image Jun 8, 2026, 10_22_51 PM (2).png"
-          alt=""
+          alt="SOP readiness before AI article illustration"
           className="mt-10 aspect-video w-full rounded-3xl object-cover shadow-xl shadow-slate-900/10"
         />
 
