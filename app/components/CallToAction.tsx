@@ -6,13 +6,13 @@ export default function CallToAction() {
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div className="max-w-2xl">
           <p className="mb-4 inline-flex rounded-full bg-white px-4 py-2 text-sm font-black text-cyan-800 shadow-sm">
-            CX / AI Technology Gap Review
+            Thinking about AI, automation, or contact centre technology?
           </p>
           <h2 className="text-3xl font-black tracking-tight text-slate-950">
-            Ready to find the gaps holding your operation back?
+            Start with the gaps.
           </h2>
           <p className="mt-4 text-lg leading-8 text-slate-700">
-            Start with a practical review of whether your CX, contact centre, BPO, knowledge, process, reporting, and technology environment is ready to improve.
+            Before you buy more tools, make sure your customer journey, knowledge, SOPs, reporting, team ownership, and performance measures are ready to support them.
           </p>
         </div>
         <Link
