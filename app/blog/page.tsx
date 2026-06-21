@@ -135,10 +135,13 @@ export default function BlogPage() {
                 Practical next step
               </p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950">
-                Considering AI, automation, analytics, or contact centre technology?
+                Thinking about AI, automation, or contact centre technology?
               </h2>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
-                Start by finding the operational gaps that could hold back the investment.
+              <p className="mt-4 text-xl font-black text-slate-950">
+                Start with the gaps.
+              </p>
+              <p className="mt-3 text-lg leading-8 text-slate-700">
+                Before you buy more tools, make sure your customer journey, knowledge, SOPs, reporting, team ownership, and performance measures are ready to support them.
               </p>
             </div>
             <Link
