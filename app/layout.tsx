@@ -4,9 +4,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.3psolutions.ca"),
-  title: "3P Solutions | AI-Readiness Through Operational Alignment",
+  title: "3P Solutions | Contact Centre Performance for the AI Era",
   description:
-    "3P Solutions helps CX, contact centre, BPO, and service business leaders align people, process, technology, knowledge, and performance measurement before investing in AI or automation.",
+    "3P Solutions helps contact centre, CX, and BPO leaders improve customer value, cost, revenue, performance, operating models, technology, and AI-readiness.",
   alternates: {
     canonical: "/",
   },
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "3P Solutions | AI-Readiness Through Operational Alignment",
+    title: "3P Solutions | Contact Centre Performance for the AI Era",
     description:
-      "3P Solutions helps CX, contact centre, BPO, and service business leaders align people, process, technology, knowledge, and performance measurement before investing in AI or automation.",
+      "Improve the business behind the customer experience. 3P Solutions helps leaders align people, process, performance, technology, and AI to build stronger contact centre operations.",
     url: "/",
     siteName: "3P Solutions",
     type: "website",
