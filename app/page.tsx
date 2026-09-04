@@ -366,15 +366,15 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">The 3P Framework</p>
-              <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">AI-readiness is an alignment problem before it is a technology problem.</h2>
+              <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">A high-performing contact centre has to work for People, Product, and Profit at the same time.</h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                People create and use the knowledge. Product is the full customer experience that knowledge supports. Profit depends on reliable data and informed decisions. The 3Ps of Leadership and Management keep all three aligned.
+                People are the employees and leaders doing the work. Product is the customer experience the operation delivers. Profit is the value the contact centre creates or protects for the business. AI can change how the work gets done, but sustainable performance comes from keeping all three aligned.
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-3">
-              <div className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/10"><h3 className="text-2xl font-black text-cyan-300">People</h3><p className="mt-3 text-sm leading-6 text-slate-300">Employee experience, leadership capability, roles, coaching, knowledge use, and workforce performance.</p></div>
-              <div className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/10"><h3 className="text-2xl font-black text-cyan-300">Product</h3><p className="mt-3 text-sm leading-6 text-slate-300">Customer experience, service quality, process consistency, knowledge accuracy, and client outcomes.</p></div>
-              <div className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/10"><h3 className="text-2xl font-black text-cyan-300">Profit</h3><p className="mt-3 text-sm leading-6 text-slate-300">Owner return, margin, cost structure, data quality, cash flow, and enterprise value.</p></div>
+              <div className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/10"><h3 className="text-2xl font-black text-cyan-300">People</h3><p className="mt-3 text-sm leading-6 text-slate-300">Employee experience, capability, leadership, roles, workforce planning, coaching, knowledge, and performance.</p></div>
+              <div className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/10"><h3 className="text-2xl font-black text-cyan-300">Product</h3><p className="mt-3 text-sm leading-6 text-slate-300">Customer experience, access, resolution, quality, consistency, journey design, trust, and the value delivered in every interaction.</p></div>
+              <div className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/10"><h3 className="text-2xl font-black text-cyan-300">Profit</h3><p className="mt-3 text-sm leading-6 text-slate-300">Cost, retention, revenue, margin, risk, productivity, scalability, and the contact centre&apos;s contribution to enterprise value.</p></div>
             </div>
           </div>
 
@@ -382,17 +382,17 @@ export default function Home() {
             <div className="rounded-3xl border border-white/10 bg-white/10 p-6">
               <p className="text-sm font-black uppercase tracking-[0.18em] text-cyan-300">Supported by the 3Ps of Leadership</p>
               <div className="mt-5 grid gap-4 md:grid-cols-3">
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Purpose</h4><p className="mt-2 text-sm leading-6 text-slate-300">Why the business exists and where it is going.</p></div>
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Principles</h4><p className="mt-2 text-sm leading-6 text-slate-300">How decisions are made and which behaviours are expected.</p></div>
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Progress</h4><p className="mt-2 text-sm leading-6 text-slate-300">How the organization knows it is moving in the right direction.</p></div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Purpose</h4><p className="mt-2 text-sm leading-6 text-slate-300">Why the contact centre exists and the value it is expected to create for customers and the business.</p></div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Principles</h4><p className="mt-2 text-sm leading-6 text-slate-300">How leaders make trade-offs across customers, employees, cost, revenue, technology, and risk.</p></div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Progress</h4><p className="mt-2 text-sm leading-6 text-slate-300">How the operation proves it is improving customer, employee, operational, and financial outcomes.</p></div>
               </div>
             </div>
             <div className="rounded-3xl border border-cyan-400/30 bg-cyan-400/10 p-6">
               <p className="text-sm font-black uppercase tracking-[0.18em] text-cyan-300">Executed through the 3Ps of Management</p>
               <div className="mt-5 grid gap-4 md:grid-cols-3">
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Planning</h4><p className="mt-2 text-sm leading-6 text-slate-300">Goals, priorities, roles, resources, and decision-making.</p></div>
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Processes</h4><p className="mt-2 text-sm leading-6 text-slate-300">Workflows, SOPs, systems, handoffs, tools, and execution.</p></div>
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Performance</h4><p className="mt-2 text-sm leading-6 text-slate-300">KPIs, scorecards, accountability, and review rhythm.</p></div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Planning</h4><p className="mt-2 text-sm leading-6 text-slate-300">Demand, capacity, goals, roles, budgets, vendors, technology, AI, and priorities aligned to the business.</p></div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Processes</h4><p className="mt-2 text-sm leading-6 text-slate-300">Customer journeys, workflows, SOPs, knowledge, handoffs, QA, training, coaching, and automation.</p></div>
+                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Performance</h4><p className="mt-2 text-sm leading-6 text-slate-300">KPIs and business reviews connecting customer, employee, operational, and financial performance.</p></div>
               </div>
             </div>
           </div>
@@ -401,9 +401,9 @@ export default function Home() {
             <div className="border-b border-slate-200 bg-slate-100 px-6 py-5"><h3 className="text-2xl font-black">The 3Px3P Matrix</h3><p className="mt-2 text-sm leading-6 text-slate-600">A practical diagnostic for testing whether Planning, Processes, and Performance Measurement properly support People, Product, and Profit.</p></div>
             <div className="grid text-sm md:grid-cols-4">
               <div className="hidden bg-slate-950 p-4 font-black text-white md:block">Management Support</div><div className="bg-cyan-50 p-4 font-black text-cyan-900">People</div><div className="bg-cyan-50 p-4 font-black text-cyan-900">Product</div><div className="bg-cyan-50 p-4 font-black text-cyan-900">Profit</div>
-              <div className="bg-slate-100 p-4 font-black">Planning</div><div className="p-4 leading-6 text-slate-700">Right roles, capacity, leadership priorities, and knowledge ownership.</div><div className="p-4 leading-6 text-slate-700">Clear customer journey, service promise, and delivery expectations.</div><div className="p-4 leading-6 text-slate-700">Plans tied to margin, cash flow, growth, and owner return.</div>
-              <div className="bg-slate-100 p-4 font-black">Processes</div><div className="p-4 leading-6 text-slate-700">Clear workflows, coaching, tools, SOPs, and support systems.</div><div className="p-4 leading-6 text-slate-700">Consistent delivery, handoffs, quality controls, and customer outcomes.</div><div className="p-4 leading-6 text-slate-700">Controlled pricing, cost, billing, revenue, and financial routines.</div>
-              <div className="bg-slate-100 p-4 font-black">Performance</div><div className="p-4 leading-6 text-slate-700">People are happy, retention is strong, and the work environment makes them want to stay.</div><div className="p-4 leading-6 text-slate-700">Customer outcomes tracked, reviewed, and acted on consistently.</div><div className="p-4 leading-6 text-slate-700">Financial measures driving informed and accountable decisions.</div>
+              <div className="bg-slate-100 p-4 font-black">Planning</div><div className="p-4 leading-6 text-slate-700">Right roles, capacity, leadership priorities, skills, and workforce strategy.</div><div className="p-4 leading-6 text-slate-700">Clear customer journey, service promise, access strategy, and delivery expectations.</div><div className="p-4 leading-6 text-slate-700">Plans tied to cost, retention, revenue, margin, risk, growth, and technology return.</div>
+              <div className="bg-slate-100 p-4 font-black">Processes</div><div className="p-4 leading-6 text-slate-700">Clear workflows, coaching, knowledge, tools, SOPs, training, and support systems.</div><div className="p-4 leading-6 text-slate-700">Consistent resolution, handoffs, quality controls, automation, and customer outcomes.</div><div className="p-4 leading-6 text-slate-700">Processes designed to eliminate waste, protect revenue, improve retention, and scale efficiently.</div>
+              <div className="bg-slate-100 p-4 font-black">Performance</div><div className="p-4 leading-6 text-slate-700">Engagement, retention, proficiency, productivity, coaching effectiveness, and leadership accountability.</div><div className="p-4 leading-6 text-slate-700">Customer outcomes, resolution, effort, quality, loyalty, and value tracked and acted on.</div><div className="p-4 leading-6 text-slate-700">Cost, productivity, retention, revenue, margin, and enterprise value connected to operational decisions.</div>
             </div>
           </div>
         </div>
