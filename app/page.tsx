@@ -31,101 +31,101 @@ import {
 } from "lucide-react";
 
 const fit = [
-  "You want to use AI, automation, analytics, or contact centre technology, but you do not trust the knowledge, SOPs, data, or workflows underneath it.",
-  "Teams use different answers, different processes, or different definitions of success.",
-  "Your SOPs exist, but they are outdated, ignored, duplicated, or hard to find.",
-  "CX, analytics, and leadership decisions are being made from inconsistent or incomplete information.",
-  "Growth, acquisition, or technology change has exposed gaps in how the business actually runs.",
-  "You need a practical assessment before investing more money in AI tools, automation, dashboards, or CX platforms.",
+  "Your contact centre is treated mainly as a cost centre, but you know it should be creating more customer and business value.",
+  "Service, quality, cost, retention, revenue, or employee performance is not where it needs to be - and the root cause is unclear.",
+  "You are under pressure to use AI, automation, analytics, or new contact centre technology without a clear operating model for where it creates value.",
+  "Teams use different processes, knowledge, metrics, or definitions of success across channels, locations, or vendors.",
+  "Growth, acquisition, outsourcing, insourcing, or technology change has exposed gaps in how customer operations actually run.",
+  "You need an experienced operator to separate the people, process, performance, and technology problems before investing more money.",
 ];
 
 const trustGaps = [
   {
     icon: FileCheck2,
-    title: "SOPs & Knowledge",
-    text: "Are procedures current, trusted, findable, and used by the people doing the work?",
+    title: "Knowledge & Process",
+    text: "Are customer journeys, SOPs, handoffs, and decision rules clear enough for people and AI to execute consistently?",
   },
   {
     icon: Settings2,
-    title: "Processes & Handoffs",
-    text: "Do teams perform the work consistently across roles, tools, locations, and customer touchpoints?",
+    title: "Operating Model",
+    text: "Are roles, workflows, vendors, leadership routines, and channels designed around the outcomes the business actually needs?",
   },
   {
     icon: Database,
-    title: "Data & Metrics",
-    text: "Are leaders using reliable definitions, clean inputs, and performance measures that match reality?",
+    title: "Data & Performance",
+    text: "Do the metrics connect customer outcomes, employee performance, cost, retention, revenue, and enterprise value?",
   },
   {
     icon: Bot,
-    title: "AI & Automation Readiness",
-    text: "Can AI safely use your business knowledge without amplifying errors, gaps, or bad decisions?",
+    title: "Technology & AI",
+    text: "Is technology solving a defined business problem - or automating weak processes, bad data, and untrusted knowledge?",
   },
 ];
 
 const audiences = [
   {
     icon: Headphones,
-    title: "CX & Contact Centre Teams",
-    text: "Create trusted knowledge, consistent service processes, and reliable CX data before deploying AI, analytics, automation, or new contact centre technology.",
+    title: "CX & Contact Centre Leaders",
+    text: "Improve service, cost, quality, retention, revenue, workforce performance, and AI adoption as one connected operating system.",
   },
   {
     icon: Building2,
-    title: "BPO & Outsourcing Operators",
-    text: "Align delivery knowledge, SOPs, client expectations, coaching, quality, and performance data across complex programs.",
+    title: "BPO & Outsourcing Leaders",
+    text: "Align client expectations, delivery operations, incentives, knowledge, coaching, quality, reporting, and technology across complex programs.",
   },
   {
     icon: TrendingUp,
-    title: "PE-backed / Founder-led Service Businesses",
-    text: "Turn informal founder knowledge into trusted operating systems that support scale, reporting, delegation, and AI-readiness.",
+    title: "CEOs, COOs & Service Businesses",
+    text: "Turn customer operations into a better-run business unit with clearer accountability, stronger economics, and a practical technology roadmap.",
   },
   {
     icon: Handshake,
-    title: "Post-Acquisition Teams",
-    text: "Identify where processes, systems, metrics, and decision rules conflict before trying to integrate or automate them.",
+    title: "Transformation & Post-Acquisition Teams",
+    text: "Integrate people, processes, systems, vendors, metrics, and customer journeys before scaling or automating the wrong operating model.",
   },
 ];
 
 const services = [
   {
     icon: BrainCircuit,
-    title: "CX / AI Technology Gap Review",
-    text: "A focused diagnostic to identify the business problem, desired outcome, operating gaps, and technology-readiness issues before buying more AI, analytics, automation, or CX tools.",
+    title: "Contact Centre Performance & AI Gap Review",
+    text: "A focused diagnostic across customer experience, operating model, people, process, performance, technology, and AI to identify what is limiting business value and what to fix first.",
   },
   {
     icon: ClipboardCheck,
-    title: "Trusted Knowledge & SOP Assessment",
-    text: "Review how knowledge is created, maintained, approved, accessed, used, and trusted across front-line teams and leadership.",
+    title: "Operating Model, Knowledge & SOPs",
+    text: "Design the customer journey, workflows, ownership, handoffs, knowledge, and procedures needed for consistent human and AI-enabled execution.",
   },
   {
     icon: Gauge,
-    title: "Business Reviews & Operating Rhythm",
-    text: "Turn performance data into practical, accountable decisions through weekly, monthly, quarterly, or annual review systems.",
+    title: "Performance Management & Business Reviews",
+    text: "Connect customer, employee, operational, financial, and revenue measures so leaders can see what is working, what is not, and what action to take.",
   },
   {
     icon: Users,
-    title: "Leadership Training & Coaching Systems",
-    text: "Build practical leadership habits around decision-making, coaching, KPI literacy, accountability, and performance culture.",
+    title: "Leadership, QA, Training & Coaching",
+    text: "Build the management systems that turn expectations into front-line behaviour, proficiency, accountability, improvement, and recognition.",
   },
   {
     icon: Target,
     title: "CX / BPO Performance Improvement",
-    text: "Support CX teams and BPOs dealing with cost, quality, retention, customer experience, outsourcing alignment, or AI implementation challenges.",
+    text: "Improve cost, quality, retention, revenue, customer experience, outsourcing performance, insourcing strategy, and AI-enabled service delivery.",
   },
   {
     icon: BriefcaseBusiness,
     title: "Fractional COO / Executive Advisory",
-    text: "Embedded operator support for CEOs who need structure, traction, and cross-functional execution without adding a full-time executive role.",
+    text: "Embedded operator support for leaders who need structure, traction, cross-functional execution, and practical decisions without adding a full-time executive role.",
   },
 ];
 
 const reviewOutputs = [
-  "Business problem and desired outcome clarification",
-  "AI-readiness and trusted knowledge gap assessment",
-  "SOP, process, data, and KPI alignment findings",
-  "CX, technology, and decision-risk map",
+  "Business problem, customer outcome, and value opportunity clarification",
+  "Contact centre operating model and customer journey assessment",
+  "People, process, knowledge, data, KPI, and technology findings",
+  "AI and automation readiness tied to defined business outcomes",
   "Priority gap list with practical next steps",
-  "30/60/90-day readiness roadmap",
-  "Executive readout with recommended actions",
+  "30/60/90-day performance improvement roadmap",
+  "Executive readout with recommended actions and investment priorities",
 ];
 
 const proof = [
@@ -176,12 +176,12 @@ export default function Home() {
             <Image src="/3p-logo.png" alt="3P Solutions logo" width={56} height={56} className="h-12 w-auto" priority />
             <div>
               <p className="text-sm font-black tracking-wide text-slate-950">3P SOLUTIONS</p>
-              <p className="text-xs text-slate-500">AI-readiness through operational alignment</p>
+              <p className="text-xs text-slate-500">Contact centre performance for the AI era</p>
             </div>
           </a>
 
           <nav className="hidden items-center gap-7 text-sm font-semibold text-slate-700 md:flex" aria-label="Main navigation">
-            <a href="#readiness" className="hover:text-cyan-700">AI-Readiness</a>
+            <a href="#readiness" className="hover:text-cyan-700">AI & Performance</a>
             <a href="#who" className="hover:text-cyan-700">Who I Help</a>
             <a href="#services" className="hover:text-cyan-700">Services</a>
             <a href="#framework" className="hover:text-cyan-700">3P Framework</a>
@@ -190,7 +190,7 @@ export default function Home() {
           </nav>
 
           <a href="/cx-ai-technology-gap-review" className="hidden items-center gap-2 rounded-full bg-cyan-600 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-cyan-700 sm:inline-flex">
-            Start with a Gap Review <ArrowRight className="h-4 w-4" />
+            Assess Your Contact Centre <ArrowRight className="h-4 w-4" />
           </a>
 
           <button type="button" onClick={() => setMobileMenuOpen((open) => !open)} className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-cyan-500 hover:text-cyan-700 md:hidden" aria-label={mobileMenuOpen ? "Close menu" : "Open menu"} aria-expanded={mobileMenuOpen}>
@@ -201,7 +201,7 @@ export default function Home() {
         {mobileMenuOpen && (
           <nav className="border-t border-slate-200 bg-white px-5 py-4 shadow-lg md:hidden" aria-label="Mobile navigation">
             <div className="mx-auto grid max-w-7xl gap-2 text-base font-bold text-slate-800">
-              <a href="#readiness" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">AI-Readiness</a>
+              <a href="#readiness" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">AI & Performance</a>
               <a href="#who" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Who I Help</a>
               <a href="#services" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Services</a>
               <a href="#review" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Assessment</a>
@@ -211,7 +211,7 @@ export default function Home() {
               <a href="#about" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">About</a>
               <a href="#praise" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">PRAISE</a>
               <a href="/cx-ai-technology-gap-review" onClick={closeMobileMenu} className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-cyan-600 px-5 py-3 text-white transition hover:bg-cyan-700">
-                Start with a Gap Review <ArrowRight className="h-4 w-4" />
+                Assess Your Contact Centre <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </nav>
@@ -223,17 +223,17 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 text-sm font-bold text-cyan-800">
-              <BrainCircuit className="h-4 w-4" /> AI-Readiness | CX Technology | Contact Centres | Trusted Knowledge
+              <BrainCircuit className="h-4 w-4" /> Contact Centres | CX | BPO | Technology & AI
             </div>
             <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-tight text-slate-950 md:text-6xl">
-              AI isn&apos;t broken. Untrusted knowledge is.
+              AI is rewriting the contact centre. It still has to run like a business.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700 md:text-xl">
-              3P Solutions helps Customer Experience (CX), contact centre, BPO, and service business leaders find the operational gaps in knowledge, SOPs, data, processes, and technology before investing more money in AI, analytics, automation, or CX platforms.
+              3P Solutions helps contact centre and CX leaders align people, processes, technology, data, and performance to improve customer value, reduce cost, protect revenue, and build a stronger business unit - whether the work is human, AI-assisted, autonomous, outsourced, in-house, or hybrid.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a href="/cx-ai-technology-gap-review" className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-base font-bold text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800">
-                Start with a Gap Review <ArrowRight className="h-5 w-5" />
+                Assess Your Contact Centre <ArrowRight className="h-5 w-5" />
               </a>
               <a href="/blog/building-a-better-contact-centre-operating-model" className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700">
                 Read the Contact Centre Playbook
@@ -253,7 +253,7 @@ export default function Home() {
           <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-2xl shadow-slate-900/10">
             <div className="rounded-[1.5rem] bg-slate-950 p-6 text-white">
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">Good fit when</p>
-              <h2 className="mt-3 text-2xl font-black">You want AI, analytics, automation, or CX technology to work, but the operating knowledge underneath it can&apos;t be trusted.</h2>
+              <h2 className="mt-3 text-2xl font-black">Your contact centre is under pressure to do more with less - while proving what AI can actually improve.</h2>
             </div>
             <div className="mt-6 space-y-4">
               {fit.map((item) => (
@@ -269,10 +269,10 @@ export default function Home() {
 
       <section id="readiness" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
         <div className="max-w-3xl">
-          <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">AI-readiness starts here</p>
-          <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">AI only works when the business knowledge behind it can be trusted.</h2>
+          <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">AI changes the tools. Not the fundamentals.</p>
+          <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">AI won&apos;t fix a poorly run contact centre. It will expose it.</h2>
           <p className="mt-5 text-lg leading-8 text-slate-700">
-            If SOPs are outdated, teams follow different processes, data is inconsistent, or performance measures do not match reality, AI will only automate confusion. The first step is not buying another tool, platform, or vendor. It is assessing whether the business is ready to use one.
+            AI can reduce cost, improve service, assist employees, automate work, and create new customer value. But it cannot compensate for a weak operating model. Bad knowledge creates bad answers. Bad processes create faster mistakes. Bad metrics create bad decisions. The opportunity is to use AI inside a contact centre designed to create value for the customer and the business.
           </p>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -295,7 +295,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Who I help</p>
-            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Built for service businesses where execution depends on people, process, technology, and trust.</h2>
+            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">For leaders responsible for making customer operations perform.</h2>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {audiences.map((audience) => {
@@ -316,9 +316,9 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">How I help</p>
-            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Practical support for businesses that need AI-readiness, alignment, and traction before buying more technology.</h2>
+            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Improve the business behind the customer experience.</h2>
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              The front-door offer is the CX / AI Technology Gap Review. From there, support can expand into trusted knowledge cleanup, strategic planning, operating rhythm, leadership development, CX/BPO improvement, or fractional COO execution.
+              The goal is not AI for the sake of AI, lower cost at the expense of the customer, or another disconnected transformation project. It is a contact centre operating model that uses the right mix of people, process, technology, and automation to create measurable customer and business value.
             </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -341,9 +341,9 @@ export default function Home() {
           <div className="grid gap-8 rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8 lg:grid-cols-[0.95fr_1.05fr] lg:p-10">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-800">Fast-start offer</p>
-              <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 md:text-5xl">3P CX / AI Technology Gap Review</h2>
+              <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 md:text-5xl">3P Contact Centre Performance & AI Gap Review</h2>
               <p className="mt-5 text-lg leading-8 text-slate-700">
-                A focused diagnostic to clarify the business problem, define the desired outcome, and determine whether your knowledge, SOPs, processes, data, metrics, and operating systems are ready to support AI, analytics, CX improvement, automation, or new technology investment.
+                A focused diagnostic to identify where your contact centre is losing customer value, operational performance, revenue, or margin - and determine where AI, automation, technology, process, or people changes can create the greatest return.
               </p>
             </div>
             <div className="rounded-3xl bg-white p-6 shadow-sm">
@@ -354,7 +354,7 @@ export default function Home() {
                 ))}
               </div>
               <a href="/cx-ai-technology-gap-review" className="mt-7 inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800">
-                Start with a Gap Review <ArrowRight className="h-4 w-4" />
+                Assess Your Contact Centre <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -440,7 +440,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="bg-slate-950 py-20 text-white">
-        <div className="mx-auto max-w-4xl px-5 text-center lg:px-8"><p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Next step</p><h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">Let&apos;s find out if I can help.</h2><p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">If your AI, analytics, CX, technology, or leadership decisions depend on knowledge you do not fully trust, book a 30-minute fit call.</p><div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"><a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 transition hover:bg-cyan-400">Book the Gap Review Call <ArrowRight className="h-5 w-5" /></a><a href="mailto:brent@3psolutions.ca?subject=30-minute%20fit%20call&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20book%20a%2030-minute%20fit%20call.%0A%0AThanks%2C" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Email Brent <Mail className="h-5 w-5" /></a><a href="tel:+15198352374" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Call 519-835-2374 <Phone className="h-5 w-5" /></a></div><div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-300"><a href="https://3psolutions.ca" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300">3psolutions.ca</a><div className="flex items-center gap-3"><SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn" dark><LinkedInIcon /></SocialIconLink><SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X" dark><XIcon /></SocialIconLink></div></div></div>
+        <div className="mx-auto max-w-4xl px-5 text-center lg:px-8"><p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Next step</p><h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">Let&apos;s find out what your contact centre could be worth to the business.</h2><p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">If customer operations are costing too much, underperforming, struggling to prove value, or facing an AI and technology mandate, book a 30-minute fit call.</p><div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"><a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 transition hover:bg-cyan-400">Book a 30-Minute Fit Call <ArrowRight className="h-5 w-5" /></a><a href="mailto:brent@3psolutions.ca?subject=30-minute%20fit%20call&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20book%20a%2030-minute%20fit%20call.%0A%0AThanks%2C" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Email Brent <Mail className="h-5 w-5" /></a><a href="tel:+15198352374" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Call 519-835-2374 <Phone className="h-5 w-5" /></a></div><div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-300"><a href="https://3psolutions.ca" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300">3psolutions.ca</a><div className="flex items-center gap-3"><SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn" dark><LinkedInIcon /></SocialIconLink><SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X" dark><XIcon /></SocialIconLink></div></div></div>
       </section>
 
       <footer className="border-t border-slate-800 bg-slate-950 px-5 py-8 text-sm text-slate-400 lg:px-8">
