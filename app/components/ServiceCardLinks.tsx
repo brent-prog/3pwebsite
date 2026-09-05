@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 const serviceLinks: Record<string, string> = {
   "Contact Centre Performance & AI Gap Review": "/cx-ai-technology-gap-review",
-  "Operating Model, Knowledge & SOPs": "/contact-centre-consulting",
+  "Operating Model, Knowledge & SOPs": "/contact-centre-operating-model",
   "Performance Management & Business Reviews": "/contact-centre-consulting",
   "Leadership, QA, Training & Coaching": "/contact-centre-consulting",
   "CX / BPO Performance Improvement": "/contact-centre-consulting",
