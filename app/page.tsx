@@ -128,12 +128,27 @@ const reviewOutputs = [
   "Executive readout with recommended actions and investment priorities",
 ];
 
-const proof = [
-  "$50M+ ARR flagship Fortune 100 BPO program built from zero",
-  "$50M+ P&L and global people infrastructure supporting 35,000 employees",
-  "20-100% YoY profitability improvement across consulting engagements",
-  "300 leaders trained with 100% participant satisfaction",
-  "Post-acquisition integration leadership across people, technology, operations, and culture",
+const proofResults = [
+  {
+    metric: "$50M+ ARR",
+    title: "Flagship BPO program built from zero",
+    text: "Built and scaled a Fortune 100 customer program from launch into a $50M+ annual revenue operation.",
+  },
+  {
+    metric: "20% lower attrition",
+    title: "3,000+ FTE / 9-site telecom transformation",
+    text: "Unified fragmented contact centres, materially improved client scorecard performance, and helped drive expansion by three additional sites and approximately 1,000 FTE within 12 months.",
+  },
+  {
+    metric: "20,000+ WAH",
+    title: "Global operating-model transformation",
+    text: "Moved 18,000+ employees to work-at-home within three weeks with approvals from 78 clients, then built the infrastructure to support 20,000+ virtual employees.",
+  },
+  {
+    metric: "10% lower attrition",
+    title: "35,000-FTE global support-services redesign",
+    text: "Centralized and aligned HR, Recruiting, Training, Leadership Development, and Workforce Management around global Operations across nine countries.",
+  },
 ];
 
 function XIcon() {
@@ -186,6 +201,7 @@ export default function Home() {
             <a href="#services" className="hover:text-cyan-700">Services</a>
             <a href="#framework" className="hover:text-cyan-700">3P Framework</a>
             <a href="#proof" className="hover:text-cyan-700">Proof</a>
+            <a href="/case-studies" className="hover:text-cyan-700">Case Studies</a>
             <a href="/blog" className="hover:text-cyan-700">Blog</a>
           </nav>
 
@@ -207,6 +223,7 @@ export default function Home() {
               <a href="#review" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Assessment</a>
               <a href="#framework" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">3P Framework</a>
               <a href="#proof" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Proof</a>
+              <a href="/case-studies" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Case Studies</a>
               <a href="/blog" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Blog</a>
               <a href="#about" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">About</a>
               <a href="#praise" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">PRAISE</a>
@@ -410,9 +427,24 @@ export default function Home() {
       </section>
 
       <section id="proof" className="bg-white py-20">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:px-8">
-          <div><p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Relevant proof</p><h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Operator credibility, not consultant theatre.</h2><p className="mt-5 text-lg leading-8 text-slate-700">Brent has sat in the chair: carrying the P&L, building teams, leading integrations, improving performance, and helping leaders make decisions with real consequences.</p></div>
-          <div className="space-y-4">{proof.map((item) => (<div key={item} className="flex gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5"><CheckCircle2 className="mt-1 h-6 w-6 flex-none text-cyan-600" /><p className="font-semibold leading-7 text-slate-800">{item}</p></div>))}</div>
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="max-w-4xl">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Selected results</p>
+            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">This isn&apos;t theory. I&apos;ve had to make the numbers move.</h2>
+            <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-700">Across contact centres, BPOs, global support functions, and transformation programs, the work has ranged from building operations from zero to fixing fragmented operating models at enterprise scale.</p>
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {proofResults.map((item) => (
+              <div key={item.metric} className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+                <p className="text-3xl font-black tracking-tight text-cyan-700">{item.metric}</p>
+                <h3 className="mt-4 text-xl font-black text-slate-950">{item.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-700">{item.text}</p>
+              </div>
+            ))}
+          </div>
+          <a href="/case-studies" className="mt-8 inline-flex items-center gap-2 rounded-full bg-slate-950 px-6 py-3 font-bold text-white transition hover:bg-slate-800">
+            See the Transformation Work <ArrowRight className="h-4 w-4" />
+          </a>
         </div>
       </section>
 
