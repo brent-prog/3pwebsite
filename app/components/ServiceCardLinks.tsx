@@ -7,7 +7,7 @@ const serviceLinks: Record<string, string> = {
   "Operating Model, Knowledge & SOPs": "/contact-centre-operating-model",
   "Performance Management & Business Reviews": "/contact-centre-consulting",
   "Leadership, QA, Training & Coaching": "/contact-centre-consulting",
-  "CX / BPO Performance Improvement": "/contact-centre-consulting",
+  "CX / BPO Performance Improvement": "/bpo-outsourcing-optimization",
   "Fractional COO / Executive Advisory": "/contact-centre-consulting",
 };
 
