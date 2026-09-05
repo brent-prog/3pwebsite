@@ -6,14 +6,14 @@ import SiteHeader from "../components/SiteHeader";
 export const metadata: Metadata = {
   title: "Contact Centre & CX Transformation Case Studies | 3P Solutions",
   description:
-    "Anonymized examples of contact centre, CX, BPO, operating model, workforce, leadership, and business transformation work led by 3P Solutions founder Brent Pattison.",
+    "Examples of contact centre, CX, BPO, operating model, workforce, leadership, and business transformation work led by 3P Solutions founder Brent Pattison.",
   alternates: {
     canonical: "/case-studies",
   },
   openGraph: {
     title: "Contact Centre & CX Transformation Case Studies | 3P Solutions",
     description:
-      "Anonymized examples of contact centre, CX, BPO, operating model, workforce, leadership, and business transformation work.",
+      "Examples of contact centre, CX, BPO, operating model, workforce, leadership, and business transformation work.",
     url: "/case-studies",
     siteName: "3P Solutions",
     type: "website",
@@ -119,7 +119,7 @@ const cases = [
 const supportingProof = [
   {
     title: "Leadership system at scale",
-    text: "Designed a customized leadership, management, and coaching system for a consumer-finance organization with 8,000+ frontline sales associates and 300+ sales managers. 267 leaders completed the program and 100% reported it was relevant and immediately applicable to their role.",
+    text: "Designed a customized leadership, management, and coaching system for a consumer-finance organization with 8,000+ frontline sales associates and 300+ sales managers. 300 leaders completed the program. Among the 267 who completed the post-program survey, 100% said it was relevant and immediately applicable to their role.",
   },
   {
     title: "First Philippines offshoring launch",
@@ -142,12 +142,12 @@ export default function CaseStudiesPage() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-24">
-          <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Anonymized transformation work</p>
+          <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Transformation work</p>
           <h1 className="mt-4 max-w-5xl text-4xl font-black tracking-tight md:text-6xl">
             Real operating problems. Real scale. Measurable business outcomes.
           </h1>
           <p className="mt-6 max-w-3xl text-xl leading-9 text-slate-700">
-            Client names are intentionally withheld. The point is not the logo. It is the problem, the operating work required to fix it, and the outcome created for the business.
+            A selection of contact centre, BPO, CX, workforce, leadership, and business transformations across organizations ranging from multi-location service businesses to global operations.
           </p>
         </div>
       </section>
