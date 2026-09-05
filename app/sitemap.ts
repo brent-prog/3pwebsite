@@ -5,6 +5,7 @@ const baseUrl = "https://www.3psolutions.ca";
 const routes = [
   "/",
   "/contact-centre-consulting",
+  "/contact-centre-operating-model",
   "/case-studies",
   "/blog",
   "/cx-ai-technology-gap-review",
@@ -24,10 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? 1
         : route === "/contact-centre-consulting"
           ? 0.95
-          : route === "/cx-ai-technology-gap-review"
+          : route === "/contact-centre-operating-model"
             ? 0.9
-            : route === "/case-studies"
-              ? 0.85
-              : 0.7,
+            : route === "/cx-ai-technology-gap-review"
+              ? 0.9
+              : route === "/case-studies"
+                ? 0.85
+                : 0.7,
   }));
 }
