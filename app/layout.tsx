@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import SiteAnalytics from "./components/SiteAnalytics";
 import ServiceCardLinks from "./components/ServiceCardLinks";
+import HomeHeaderConsistency from "./components/HomeHeaderConsistency";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body>
         {children}
+        <HomeHeaderConsistency />
         <ServiceCardLinks />
         <SiteAnalytics />
       </body>
