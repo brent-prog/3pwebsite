@@ -8,6 +8,7 @@ const routes = [
   "/contact-centre-operating-model",
   "/bpo-outsourcing-optimization",
   "/contact-centre-technology-ai",
+  "/contact-centre-insourcing-outsourcing-strategy",
   "/case-studies",
   "/blog",
   "/cx-ai-technology-gap-review",
@@ -27,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? 1
         : route === "/contact-centre-consulting"
           ? 0.95
-          : route === "/contact-centre-operating-model" || route === "/bpo-outsourcing-optimization" || route === "/contact-centre-technology-ai"
+          : route === "/contact-centre-operating-model" || route === "/bpo-outsourcing-optimization" || route === "/contact-centre-technology-ai" || route === "/contact-centre-insourcing-outsourcing-strategy"
             ? 0.9
             : route === "/cx-ai-technology-gap-review"
               ? 0.9
