@@ -6,6 +6,7 @@ const routes = [
   "/",
   "/contact-centre-consulting",
   "/contact-centre-operating-model",
+  "/bpo-outsourcing-optimization",
   "/case-studies",
   "/blog",
   "/cx-ai-technology-gap-review",
@@ -25,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? 1
         : route === "/contact-centre-consulting"
           ? 0.95
-          : route === "/contact-centre-operating-model"
+          : route === "/contact-centre-operating-model" || route === "/bpo-outsourcing-optimization"
             ? 0.9
             : route === "/cx-ai-technology-gap-review"
               ? 0.9
