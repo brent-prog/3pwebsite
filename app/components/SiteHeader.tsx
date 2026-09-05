@@ -27,14 +27,14 @@ export default function SiteHeader() {
         </a>
 
         <nav
-          className="hidden items-center gap-7 text-sm font-semibold text-slate-700 md:flex"
+          className="hidden items-center gap-6 text-sm font-semibold text-slate-700 md:flex"
           aria-label="Main navigation"
         >
           <a href="/#readiness" className="hover:text-cyan-700">AI & Performance</a>
           <a href="/#who" className="hover:text-cyan-700">Who I Help</a>
           <a href="/#services" className="hover:text-cyan-700">Services</a>
           <a href="/#framework" className="hover:text-cyan-700">3P Framework</a>
-          <a href="/#proof" className="hover:text-cyan-700">Proof</a>
+          <a href="/case-studies" className="hover:text-cyan-700">Case Studies</a>
           <a href="/blog" className="hover:text-cyan-700">Blog</a>
         </nav>
 
@@ -67,7 +67,7 @@ export default function SiteHeader() {
             <a href="/#services" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Services</a>
             <a href="/#review" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Assessment</a>
             <a href="/#framework" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">3P Framework</a>
-            <a href="/#proof" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Proof</a>
+            <a href="/case-studies" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Case Studies</a>
             <a href="/blog" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Blog</a>
             <a href="/#about" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">About</a>
             <a href="/#praise" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">PRAISE</a>
