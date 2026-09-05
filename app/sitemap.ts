@@ -4,6 +4,7 @@ const baseUrl = "https://www.3psolutions.ca";
 
 const routes = [
   "/",
+  "/case-studies",
   "/blog",
   "/cx-ai-technology-gap-review",
   "/blog/people-first-even-in-an-ai-ready-business",
@@ -17,6 +18,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `${baseUrl}${route}`,
     changeFrequency: route === "/" ? "weekly" : "monthly",
-    priority: route === "/" ? 1 : route === "/cx-ai-technology-gap-review" ? 0.9 : 0.7,
+    priority:
+      route === "/"
+        ? 1
+        : route === "/cx-ai-technology-gap-review"
+          ? 0.9
+          : route === "/case-studies"
+            ? 0.85
+            : 0.7,
   }));
 }
