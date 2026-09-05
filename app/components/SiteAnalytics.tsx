@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const measurementId = "G-3DRVG7BD9D";
 
 function eventNameForHref(href: string) {
   if (href.includes("calendly.com/brent3p/30min")) return "book_call_click";
@@ -27,7 +27,7 @@ export default function SiteAnalytics() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (!measurementId || !window.gtag) return;
+    if (!window.gtag) return;
     window.gtag("event", "page_view", {
       page_path: pathname,
       page_location: window.location.href,
@@ -37,7 +37,7 @@ export default function SiteAnalytics() {
 
   useEffect(() => {
     const handleClick = (event: MouseEvent) => {
-      if (!measurementId || !window.gtag) return;
+      if (!window.gtag) return;
 
       const target = event.target as HTMLElement | null;
       const anchor = target?.closest("a") as HTMLAnchorElement | null;
@@ -57,8 +57,6 @@ export default function SiteAnalytics() {
     document.addEventListener("click", handleClick);
     return () => document.removeEventListener("click", handleClick);
   }, []);
-
-  if (!measurementId) return null;
 
   return (
     <>
