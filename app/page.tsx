@@ -195,12 +195,10 @@ export default function Home() {
             </div>
           </a>
 
-          <nav className="hidden items-center gap-7 text-sm font-semibold text-slate-700 md:flex" aria-label="Main navigation">
-            <a href="#readiness" className="hover:text-cyan-700">AI & Performance</a>
-            <a href="#who" className="hover:text-cyan-700">Who I Help</a>
+          <nav className="hidden items-center gap-6 text-sm font-semibold text-slate-700 md:flex" aria-label="Main navigation">
+            <a href="/contact-centre-consulting" className="hover:text-cyan-700">Consulting</a>
             <a href="#services" className="hover:text-cyan-700">Services</a>
             <a href="#framework" className="hover:text-cyan-700">3P Framework</a>
-            <a href="#proof" className="hover:text-cyan-700">Proof</a>
             <a href="/case-studies" className="hover:text-cyan-700">Case Studies</a>
             <a href="/blog" className="hover:text-cyan-700">Blog</a>
           </nav>
@@ -217,16 +215,13 @@ export default function Home() {
         {mobileMenuOpen && (
           <nav className="border-t border-slate-200 bg-white px-5 py-4 shadow-lg md:hidden" aria-label="Mobile navigation">
             <div className="mx-auto grid max-w-7xl gap-2 text-base font-bold text-slate-800">
-              <a href="#readiness" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">AI & Performance</a>
-              <a href="#who" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Who I Help</a>
+              <a href="/contact-centre-consulting" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Contact Centre Consulting</a>
               <a href="#services" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Services</a>
               <a href="#review" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Assessment</a>
               <a href="#framework" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">3P Framework</a>
-              <a href="#proof" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Proof</a>
               <a href="/case-studies" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Case Studies</a>
               <a href="/blog" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">Blog</a>
               <a href="#about" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">About</a>
-              <a href="#praise" onClick={closeMobileMenu} className="rounded-2xl px-4 py-3 hover:bg-cyan-50 hover:text-cyan-700">PRAISE</a>
               <a href="/cx-ai-technology-gap-review" onClick={closeMobileMenu} className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-cyan-600 px-5 py-3 text-white transition hover:bg-cyan-700">
                 Assess Your Contact Centre <ArrowRight className="h-4 w-4" />
               </a>
