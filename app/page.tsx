@@ -1,430 +1,221 @@
-"use client";
-
-import type { ReactNode } from "react";
-import Image from "next/image";
 import SiteHeader from "./components/SiteHeader";
 import {
   ArrowRight,
   Bot,
   BrainCircuit,
-  CalendarDays,
   CheckCircle2,
   ClipboardCheck,
-  Database,
-  FileCheck2,
   Gauge,
+  Handshake,
   Headphones,
-  Mail,
-  MapPin,
-  Phone,
-  ShieldCheck,
-  Target,
+  Settings2,
   TrendingUp,
   Users,
-  BookOpen,
-  Building2,
-  Handshake,
-  Settings2,
-  Layers3,
-  BriefcaseBusiness,
 } from "lucide-react";
 
-const fit = [
-  "Your contact centre is treated mainly as a cost centre, but you know it should be creating more customer and business value.",
-  "Service, quality, cost, retention, revenue, or employee performance is not where it needs to be - and the root cause is unclear.",
-  "You are under pressure to use AI, automation, analytics, or new contact centre technology without a clear operating model for where it creates value.",
-  "Teams use different processes, knowledge, metrics, or definitions of success across channels, locations, or vendors.",
-  "Growth, acquisition, outsourcing, insourcing, or technology change has exposed gaps in how customer operations actually run.",
-  "You need an experienced operator to separate the people, process, performance, and technology problems before investing more money.",
-];
-
-const trustGaps = [
-  {
-    icon: FileCheck2,
-    title: "Knowledge & Process",
-    text: "Are customer journeys, SOPs, handoffs, and decision rules clear enough for people and AI to execute consistently?",
-  },
-  {
-    icon: Settings2,
-    title: "Operating Model",
-    text: "Are roles, workflows, vendors, leadership routines, and channels designed around the outcomes the business actually needs?",
-  },
-  {
-    icon: Database,
-    title: "Data & Performance",
-    text: "Do the metrics connect customer outcomes, employee performance, cost, retention, revenue, and enterprise value?",
-  },
-  {
-    icon: Bot,
-    title: "Technology & AI",
-    text: "Is technology solving a defined business problem - or automating weak processes, bad data, and untrusted knowledge?",
-  },
-];
-
-const audiences = [
-  {
-    icon: Headphones,
-    title: "CX & Contact Centre Leaders",
-    text: "Improve service, cost, quality, retention, revenue, workforce performance, and AI adoption as one connected operating system.",
-  },
-  {
-    icon: Building2,
-    title: "BPO & Outsourcing Leaders",
-    text: "Align client expectations, delivery operations, incentives, knowledge, coaching, quality, reporting, and technology across complex programs.",
-  },
-  {
-    icon: TrendingUp,
-    title: "CEOs, COOs & Service Businesses",
-    text: "Turn customer operations into a better-run business unit with clearer accountability, stronger economics, and a practical technology roadmap.",
-  },
-  {
-    icon: Handshake,
-    title: "Transformation & Post-Acquisition Teams",
-    text: "Integrate people, processes, systems, vendors, metrics, and customer journeys before scaling or automating the wrong operating model.",
-  },
+const outcomes = [
+  { title: "Lower cost", text: "Remove avoidable demand, waste, rework, and bad operating friction." },
+  { title: "Better CX", text: "Make service easier, faster, more consistent, and more valuable to customers." },
+  { title: "Protect revenue", text: "Improve retention, conversion, loyalty, and the value created in customer interactions." },
+  { title: "Make AI pay", text: "Use automation where it creates real return - not because the demo looked good." },
 ];
 
 const services = [
   {
     icon: BrainCircuit,
     title: "Contact Centre Performance & AI Gap Review",
-    text: "A focused diagnostic across customer experience, operating model, people, process, performance, technology, and AI to identify what is limiting business value and what to fix first.",
+    text: "Find what is limiting performance and what to fix first.",
+    href: "/cx-ai-technology-gap-review",
   },
   {
     icon: ClipboardCheck,
-    title: "Operating Model, Knowledge & SOPs",
-    text: "Design the customer journey, workflows, ownership, handoffs, knowledge, and procedures needed for consistent human and AI-enabled execution.",
+    title: "Contact Centre Operating Model",
+    text: "Align people, process, knowledge, metrics, technology, and ownership.",
+    href: "/contact-centre-operating-model",
   },
   {
-    icon: Gauge,
-    title: "Performance Management & Business Reviews",
-    text: "Connect customer, employee, operational, financial, and revenue measures so leaders can see what is working, what is not, and what action to take.",
+    icon: Bot,
+    title: "Contact Centre Technology & AI",
+    text: "Make better technology and AI decisions based on business value.",
+    href: "/contact-centre-technology-ai",
+  },
+  {
+    icon: Handshake,
+    title: "BPO & Outsourcing Optimization",
+    text: "Fix the client-BPO operating model, not just the scorecard.",
+    href: "/bpo-outsourcing-optimization",
+  },
+  {
+    icon: Settings2,
+    title: "Insourcing & Outsourcing Strategy",
+    text: "Decide where the work should actually live - and why.",
+    href: "/contact-centre-insourcing-outsourcing-strategy",
   },
   {
     icon: Users,
     title: "Leadership, QA, Training & Coaching",
-    text: "Build the management systems that turn expectations into front-line behaviour, proficiency, accountability, improvement, and recognition.",
-  },
-  {
-    icon: Target,
-    title: "CX / BPO Performance Improvement",
-    text: "Improve cost, quality, retention, revenue, customer experience, outsourcing performance, insourcing strategy, and AI-enabled service delivery.",
-  },
-  {
-    icon: BriefcaseBusiness,
-    title: "Fractional COO / Executive Advisory",
-    text: "Embedded operator support for leaders who need structure, traction, cross-functional execution, and practical decisions without adding a full-time executive role.",
+    text: "Turn expectations into consistent frontline performance.",
+    href: "/contact-centre-consulting",
   },
 ];
 
-const reviewOutputs = [
-  "Business problem, customer outcome, and value opportunity clarification",
-  "Contact centre operating model and customer journey assessment",
-  "People, process, knowledge, data, KPI, and technology findings",
-  "AI and automation readiness tied to defined business outcomes",
-  "Priority gap list with practical next steps",
-  "30/60/90-day performance improvement roadmap",
-  "Executive readout with recommended actions and investment priorities",
+const proof = [
+  { metric: "$50M+ ARR", text: "BPO program built from zero" },
+  { metric: "20% lower attrition", text: "3,000+ FTE telecom transformation" },
+  { metric: "20,000+ WAH", text: "Global operating-model transformation" },
+  { metric: "10% lower attrition", text: "35,000-FTE support-services redesign" },
 ];
-
-const proofResults = [
-  {
-    metric: "$50M+ ARR",
-    title: "Flagship BPO program built from zero",
-    text: "Built and scaled a Fortune 100 customer program from launch into a $50M+ annual revenue operation.",
-  },
-  {
-    metric: "20% lower attrition",
-    title: "3,000+ FTE / 9-site telecom transformation",
-    text: "Unified fragmented contact centres, materially improved client scorecard performance, and helped drive expansion by three additional sites and approximately 1,000 FTE within 12 months.",
-  },
-  {
-    metric: "20,000+ WAH",
-    title: "Global operating-model transformation",
-    text: "Moved 18,000+ employees to work-at-home within three weeks with approvals from 78 clients, then built the infrastructure to support 20,000+ virtual employees.",
-  },
-  {
-    metric: "10% lower attrition",
-    title: "35,000-FTE global support-services redesign",
-    text: "Centralized and aligned HR, Recruiting, Training, Leadership Development, and Workforce Management around global Operations across nine countries.",
-  },
-];
-
-function XIcon() {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
-      <path d="M18.244 2H21.5l-7.11 8.128L22.75 22h-6.544l-5.124-6.708L5.214 22H1.956l7.604-8.693L1.5 2h6.71l4.632 6.113L18.244 2Zm-1.143 18.05h1.803L7.229 3.845H5.295L17.1 20.05Z" />
-    </svg>
-  );
-}
-
-function LinkedInIcon() {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
-      <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.17 3 3.5 3.72 3.5 4.67c0 .93.65 1.67 1.71 1.67h.02c1.1 0 1.78-.74 1.78-1.67C6.99 3.72 6.34 3 5.25 3ZM20.5 12.92c0-3.47-1.85-5.08-4.32-5.08-1.99 0-2.88 1.1-3.38 1.87V8.5H9.42c.04.8 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.12-.92.27-.68.87-1.38 1.88-1.38 1.33 0 1.86 1.02 1.86 2.5V20h3.38v-6.08Z" />
-    </svg>
-  );
-}
-
-function SocialIconLink({ href, label, dark = false, children }: { href: string; label: string; dark?: boolean; children: ReactNode }) {
-  const className = dark
-    ? "flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition hover:border-cyan-300 hover:bg-cyan-400 hover:text-slate-950"
-    : "flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-900 transition hover:border-cyan-500 hover:bg-cyan-50 hover:text-cyan-700";
-
-  return (
-    <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className={className}>
-      {children}
-    </a>
-  );
-}
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-950">
+    <main className="min-h-screen bg-white text-slate-950">
       <SiteHeader />
 
-      <section id="top" className="relative overflow-hidden bg-white">
+      <section id="top" className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 via-white to-slate-100" />
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:py-28">
           <div>
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 text-sm font-bold text-cyan-800">
-              <BrainCircuit className="h-4 w-4" /> Contact Centres | CX | BPO | Technology & AI
+            <div className="inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 text-sm font-bold text-cyan-800">
+              <Headphones className="h-4 w-4" /> Contact Centres | CX | BPO | AI
             </div>
-            <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-tight text-slate-950 md:text-6xl">
-              AI is rewriting the contact centre. It still has to run like a business.
+            <h1 className="mt-6 max-w-4xl text-5xl font-black leading-[1.02] tracking-tight md:text-7xl">
+              Make your contact centre worth more to the business.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700 md:text-xl">
-              3P Solutions helps contact centre and CX leaders align people, processes, technology, data, and performance to improve customer value, reduce cost, protect revenue, and build a stronger business unit - whether the work is human, AI-assisted, autonomous, outsourced, in-house, or hybrid.
+            <p className="mt-6 max-w-2xl text-xl leading-8 text-slate-700 md:text-2xl">
+              Better customer experience. Lower cost. More retained revenue. Smarter AI.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-              <a href="/cx-ai-technology-gap-review" className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-base font-bold text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800">
-                Assess Your Contact Centre <ArrowRight className="h-5 w-5" />
+              <a href="/cx-ai-technology-gap-review" className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-7 py-4 text-base font-black text-white transition hover:bg-slate-800">
+                Find the Gaps <ArrowRight className="h-5 w-5" />
               </a>
-              <a href="/blog/building-a-better-contact-centre-operating-model" className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700">
-                Read the Contact Centre Playbook
+              <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-4 text-base font-black text-slate-950 transition hover:border-cyan-500 hover:text-cyan-700">
+                Talk to Brent
               </a>
             </div>
-            <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-slate-600">
-              <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4 text-cyan-700" /> Guelph, Ontario</span>
-              <a href="mailto:brent@3psolutions.ca" className="inline-flex items-center gap-2 hover:text-cyan-700"><Mail className="h-4 w-4 text-cyan-700" /> brent@3psolutions.ca</a>
-              <a href="tel:+15198352374" className="inline-flex items-center gap-2 hover:text-cyan-700"><Phone className="h-4 w-4 text-cyan-700" /> (519) 835-2374</a>
-              <div className="flex items-center gap-2">
-                <SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn"><LinkedInIcon /></SocialIconLink>
-                <SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X"><XIcon /></SocialIconLink>
-              </div>
-            </div>
           </div>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-2xl shadow-slate-900/10">
-            <div className="rounded-[1.5rem] bg-slate-950 p-6 text-white">
-              <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">Good fit when</p>
-              <h2 className="mt-3 text-2xl font-black">Your contact centre is under pressure to do more with less - while proving what AI can actually improve.</h2>
-            </div>
-            <div className="mt-6 space-y-4">
-              {fit.map((item) => (
-                <div key={item} className="flex gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-cyan-600" />
-                  <p className="text-sm leading-6 text-slate-700">{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="readiness" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="max-w-3xl">
-          <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">AI changes the tools. Not the fundamentals.</p>
-          <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">AI won&apos;t fix a poorly run contact centre. It will expose it.</h2>
-          <p className="mt-5 text-lg leading-8 text-slate-700">
-            AI can reduce cost, improve service, assist employees, automate work, and create new customer value. But it cannot compensate for a weak operating model. Bad knowledge creates bad answers. Bad processes create faster mistakes. Bad metrics create bad decisions. The opportunity is to use AI inside a contact centre designed to create value for the customer and the business.
-          </p>
-        </div>
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          {trustGaps.map((gap) => {
-            const Icon = gap.icon;
-            return (
-              <div key={gap.title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-50 text-cyan-700">
-                  <Icon className="h-7 w-7" />
-                </div>
-                <h3 className="text-xl font-black text-slate-950">{gap.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-700">{gap.text}</p>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      <section id="who" className="bg-white py-20">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Who I help</p>
-            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">For leaders responsible for making customer operations perform.</h2>
-          </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {audiences.map((audience) => {
-              const Icon = audience.icon;
-              return (
-                <div key={audience.title} className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-50 text-cyan-700"><Icon className="h-7 w-7" /></div>
-                  <h3 className="text-xl font-black text-slate-950">{audience.title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-slate-700">{audience.text}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      <section id="services" className="bg-slate-50 py-20">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">How I help</p>
-            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Improve the business behind the customer experience.</h2>
-            <p className="mt-5 text-lg leading-8 text-slate-700">
-              The goal is not AI for the sake of AI, lower cost at the expense of the customer, or another disconnected transformation project. It is a contact centre operating model that uses the right mix of people, process, technology, and automation to create measurable customer and business value.
+          <div className="rounded-[2rem] bg-slate-950 p-7 text-white shadow-2xl shadow-slate-900/10">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Why now?</p>
+            <h2 className="mt-3 text-3xl font-black tracking-tight">AI is changing the economics of customer service.</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-300">
+              If the operating model is weak, AI makes the weakness faster. If the model is right, AI can make the business stronger.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 py-18 lg:px-8 lg:py-20">
+        <div className="max-w-3xl">
+          <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">What&apos;s in it for you?</p>
+          <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">A contact centre that creates more value.</h2>
+        </div>
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          {outcomes.map((item) => (
+            <div key={item.title} className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <h3 className="text-2xl font-black">{item.title}</h3>
+              <p className="mt-3 leading-7 text-slate-700">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="services" className="bg-slate-950 py-20 text-white">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">How 3P helps</p>
+            <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">Find the problem. Fix the system. Improve the economics.</h2>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => {
               const Icon = service.icon;
               return (
-                <div key={service.title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/10">
-                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-50 text-cyan-700"><Icon className="h-7 w-7" /></div>
-                  <h3 className="text-xl font-black text-slate-950">{service.title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-slate-700">{service.text}</p>
-                </div>
+                <a key={service.title} href={service.href} className="group rounded-3xl border border-white/10 bg-white/10 p-6 transition hover:-translate-y-1 hover:bg-white/15">
+                  <Icon className="h-8 w-8 text-cyan-300" />
+                  <h3 className="mt-5 text-xl font-black">{service.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-slate-300">{service.text}</p>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-black text-cyan-300">
+                    Learn more <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                  </span>
+                </a>
               );
             })}
           </div>
         </div>
       </section>
 
-      <section id="review" className="bg-white py-20">
+      <section className="bg-cyan-50 py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="grid gap-8 rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8 lg:grid-cols-[0.95fr_1.05fr] lg:p-10">
-            <div>
-              <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-800">Fast-start offer</p>
-              <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 md:text-5xl">3P Contact Centre Performance & AI Gap Review</h2>
-              <p className="mt-5 text-lg leading-8 text-slate-700">
-                A focused diagnostic to identify where your contact centre is losing customer value, operational performance, revenue, or margin - and determine where AI, automation, technology, process, or people changes can create the greatest return.
-              </p>
-            </div>
-            <div className="rounded-3xl bg-white p-6 shadow-sm">
-              <p className="text-lg font-black text-slate-950">You receive:</p>
-              <div className="mt-5 grid gap-4">
-                {reviewOutputs.map((step) => (
-                  <div key={step} className="flex items-center gap-3"><CheckCircle2 className="h-5 w-5 flex-none text-cyan-600" /><p className="font-semibold text-slate-800">{step}</p></div>
-                ))}
-              </div>
-              <a href="/cx-ai-technology-gap-review" className="mt-7 inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800">
-                Assess Your Contact Centre <ArrowRight className="h-4 w-4" />
-              </a>
-            </div>
+          <div className="max-w-3xl">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-800">Why 3P?</p>
+            <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">I&apos;ve actually run this stuff.</h2>
+            <p className="mt-5 text-xl leading-8 text-slate-700">
+              30+ years building, running, scaling, outsourcing, insourcing, fixing, and transforming contact centres and BPO operations.
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section id="framework" className="bg-slate-950 py-20 text-white">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2">
-            <div>
-              <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">The 3P Framework</p>
-              <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">A high-performing contact centre has to work for People, Product, and Profit at the same time.</h2>
-              <p className="mt-6 text-lg leading-8 text-slate-300">
-                People are the employees and leaders doing the work. Product is the customer experience the operation delivers. Profit is the value the contact centre creates or protects for the business. AI can change how the work gets done, but sustainable performance comes from keeping all three aligned.
-              </p>
-            </div>
-            <div className="grid gap-5 md:grid-cols-3">
-              <div className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/10"><h3 className="text-2xl font-black text-cyan-300">People</h3><p className="mt-3 text-sm leading-6 text-slate-300">Employee experience, capability, leadership, roles, workforce planning, coaching, knowledge, and performance.</p></div>
-              <div className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/10"><h3 className="text-2xl font-black text-cyan-300">Product</h3><p className="mt-3 text-sm leading-6 text-slate-300">Customer experience, access, resolution, quality, consistency, journey design, trust, and the value delivered in every interaction.</p></div>
-              <div className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/10"><h3 className="text-2xl font-black text-cyan-300">Profit</h3><p className="mt-3 text-sm leading-6 text-slate-300">Cost, retention, revenue, margin, risk, productivity, scalability, and the contact centre&apos;s contribution to enterprise value.</p></div>
-            </div>
-          </div>
-
-          <div className="mt-12 grid gap-5 lg:grid-cols-2">
-            <div className="rounded-3xl border border-white/10 bg-white/10 p-6">
-              <p className="text-sm font-black uppercase tracking-[0.18em] text-cyan-300">Supported by the 3Ps of Leadership</p>
-              <div className="mt-5 grid gap-4 md:grid-cols-3">
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Purpose</h4><p className="mt-2 text-sm leading-6 text-slate-300">Why the contact centre exists and the value it is expected to create for customers and the business.</p></div>
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Principles</h4><p className="mt-2 text-sm leading-6 text-slate-300">How leaders make trade-offs across customers, employees, cost, revenue, technology, and risk.</p></div>
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Progress</h4><p className="mt-2 text-sm leading-6 text-slate-300">How the operation proves it is improving customer, employee, operational, and financial outcomes.</p></div>
-              </div>
-            </div>
-            <div className="rounded-3xl border border-cyan-400/30 bg-cyan-400/10 p-6">
-              <p className="text-sm font-black uppercase tracking-[0.18em] text-cyan-300">Executed through the 3Ps of Management</p>
-              <div className="mt-5 grid gap-4 md:grid-cols-3">
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Planning</h4><p className="mt-2 text-sm leading-6 text-slate-300">Demand, capacity, goals, roles, budgets, vendors, technology, AI, and priorities aligned to the business.</p></div>
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Processes</h4><p className="mt-2 text-sm leading-6 text-slate-300">Customer journeys, workflows, SOPs, knowledge, handoffs, QA, training, coaching, and automation.</p></div>
-                <div className="rounded-2xl bg-slate-900 p-4"><h4 className="font-black text-white">Performance</h4><p className="mt-2 text-sm leading-6 text-slate-300">KPIs and business reviews connecting customer, employee, operational, and financial performance.</p></div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-12 overflow-hidden rounded-3xl border border-white/10 bg-white text-slate-950 shadow-2xl shadow-black/20">
-            <div className="border-b border-slate-200 bg-slate-100 px-6 py-5"><h3 className="text-2xl font-black">The 3Px3P Matrix</h3><p className="mt-2 text-sm leading-6 text-slate-600">A practical diagnostic for testing whether Planning, Processes, and Performance Measurement properly support People, Product, and Profit.</p></div>
-            <div className="grid text-sm md:grid-cols-4">
-              <div className="hidden bg-slate-950 p-4 font-black text-white md:block">Management Support</div><div className="bg-cyan-50 p-4 font-black text-cyan-900">People</div><div className="bg-cyan-50 p-4 font-black text-cyan-900">Product</div><div className="bg-cyan-50 p-4 font-black text-cyan-900">Profit</div>
-              <div className="bg-slate-100 p-4 font-black">Planning</div><div className="p-4 leading-6 text-slate-700">Right roles, capacity, leadership priorities, skills, and workforce strategy.</div><div className="p-4 leading-6 text-slate-700">Clear customer journey, service promise, access strategy, and delivery expectations.</div><div className="p-4 leading-6 text-slate-700">Plans tied to cost, retention, revenue, margin, risk, growth, and technology return.</div>
-              <div className="bg-slate-100 p-4 font-black">Processes</div><div className="p-4 leading-6 text-slate-700">Clear workflows, coaching, knowledge, tools, SOPs, training, and support systems.</div><div className="p-4 leading-6 text-slate-700">Consistent resolution, handoffs, quality controls, automation, and customer outcomes.</div><div className="p-4 leading-6 text-slate-700">Processes designed to eliminate waste, protect revenue, improve retention, and scale efficiently.</div>
-              <div className="bg-slate-100 p-4 font-black">Performance</div><div className="p-4 leading-6 text-slate-700">Engagement, retention, proficiency, productivity, coaching effectiveness, and leadership accountability.</div><div className="p-4 leading-6 text-slate-700">Customer outcomes, resolution, effort, quality, loyalty, and value tracked and acted on.</div><div className="p-4 leading-6 text-slate-700">Cost, productivity, retention, revenue, margin, and enterprise value connected to operational decisions.</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="proof" className="bg-white py-20">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="max-w-4xl">
-            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">Selected results</p>
-            <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">This isn&apos;t theory. I&apos;ve had to make the numbers move.</h2>
-            <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-700">Across contact centres, BPOs, global support functions, and transformation programs, the work has ranged from building operations from zero to fixing fragmented operating models at enterprise scale.</p>
-          </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {proofResults.map((item) => (
-              <div key={item.metric} className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {proof.map((item) => (
+              <div key={item.metric} className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-cyan-100">
                 <p className="text-3xl font-black tracking-tight text-cyan-700">{item.metric}</p>
-                <h3 className="mt-4 text-xl font-black text-slate-950">{item.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-700">{item.text}</p>
+                <p className="mt-3 leading-7 text-slate-700">{item.text}</p>
               </div>
             ))}
           </div>
-          <a href="/case-studies" className="mt-8 inline-flex items-center gap-2 rounded-full bg-slate-950 px-6 py-3 font-bold text-white transition hover:bg-slate-800">
-            See the Transformation Work <ArrowRight className="h-4 w-4" />
+          <a href="/case-studies" className="mt-8 inline-flex items-center gap-2 font-black text-cyan-900">
+            See the transformation work <ArrowRight className="h-4 w-4" />
           </a>
         </div>
       </section>
 
-      <section id="about" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-2">
-          <div className="rounded-[2rem] bg-slate-950 p-8 text-white shadow-2xl shadow-slate-900/10"><Image src="/3p-logo.png" alt="3P Solutions logo" width={160} height={160} className="h-28 w-auto" /><h2 className="mt-6 text-3xl font-black">About Brent Pattison</h2><p className="mt-4 text-slate-300">Founder, 3P Solutions</p></div>
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"><h3 className="text-2xl font-black text-slate-950">I have sat in the chair.</h3><p className="mt-5 text-lg leading-8 text-slate-700">I started in front-line customer service and spent more than 30 years building, running, fixing, and scaling contact centres, CX operations, and BPO programs. I have carried the P&amp;L, supported Fortune 100 client relationships, led operations across countries and cultures, built teams from zero, integrated acquisitions, and redesigned the support functions around frontline performance.</p><p className="mt-5 text-lg leading-8 text-slate-700">Technology has always been part of that job - from WFM, QA, speech analytics, coaching, workforce analytics, and enterprise reporting to today&apos;s AI and automation. My work starts with the business problem, the customer outcome, and the operating model. Then we determine where people, process, data, technology, and AI can actually create value.</p><div className="mt-8 grid gap-4 md:grid-cols-3"><div className="rounded-2xl bg-cyan-50 p-5"><TrendingUp className="h-7 w-7 text-cyan-700" /><p className="mt-3 font-black">Growth</p></div><div className="rounded-2xl bg-cyan-50 p-5"><ShieldCheck className="h-7 w-7 text-cyan-700" /><p className="mt-3 font-black">Trust</p></div><div className="rounded-2xl bg-cyan-50 p-5"><CalendarDays className="h-7 w-7 text-cyan-700" /><p className="mt-3 font-black">Execution</p></div></div></div>
-        </div>
-      </section>
-
-      <section id="praise" className="bg-cyan-50 py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
-          <div className="rounded-[2rem] bg-white p-8 shadow-sm"><BookOpen className="h-12 w-12 text-cyan-700" /><h2 className="mt-6 text-3xl font-black tracking-tight text-slate-950">PRAISE Coaching Methodology</h2><p className="mt-4 text-slate-700">A practical leadership system for improving specific behaviours, closing the loop, and building performance culture.</p></div>
-          <div className="rounded-[2rem] border border-cyan-200 bg-white p-8 shadow-sm"><p className="text-lg leading-8 text-slate-700">Brent is the author of <span className="font-bold text-slate-950">PRAISE: The Cornerstone of Coaching to Success</span> and creator of the PRAISE coaching methodology. The approach helps managers prepare for coaching, present feedback clearly, and follow up with specific praise when the right behaviours are demonstrated.</p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <a href="https://www.amazon.ca/PRAISE-Cornerstone-Coaching-Supervisors-Managers-ebook/dp/B0D4NSM7BP" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800">
-                View on Amazon.ca <ArrowRight className="h-4 w-4" />
-              </a>
-              <a href="https://a.co/d/0fd8oGsX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700">
-                View on Amazon.com <ArrowRight className="h-4 w-4" />
-              </a>
-            </div>
+      <section id="framework" className="bg-white py-20">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">The 3P lens</p>
+            <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">People. Product. Profit.</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-700">
+              Better employee performance. Better customer experience. Better business results. If one breaks, the contact centre feels it.
+            </p>
+          </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            {[
+              ["People", "Can employees and leaders execute consistently?"],
+              ["Product", "Does the customer get the experience the business intends?"],
+              ["Profit", "Does the operation create or protect measurable value?"],
+            ].map(([title, text]) => (
+              <div key={title} className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                <h3 className="text-2xl font-black text-cyan-700">{title}</h3>
+                <p className="mt-3 leading-7 text-slate-700">{text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section id="contact" className="bg-slate-950 py-20 text-white">
-        <div className="mx-auto max-w-4xl px-5 text-center lg:px-8"><p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Next step</p><h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">Let&apos;s find out what your contact centre could be worth to the business.</h2><p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">If customer operations are costing too much, underperforming, struggling to prove value, or facing an AI and technology mandate, book a 30-minute fit call.</p><div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"><a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 text-base font-black text-slate-950 transition hover:bg-cyan-400">Book a 30-Minute Fit Call <ArrowRight className="h-5 w-5" /></a><a href="mailto:brent@3psolutions.ca?subject=30-minute%20fit%20call&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20book%20a%2030-minute%20fit%20call.%0A%0AThanks%2C" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Email Brent <Mail className="h-5 w-5" /></a><a href="tel:+15198352374" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-black text-white transition hover:bg-white/10">Call 519-835-2374 <Phone className="h-5 w-5" /></a></div><div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-300"><a href="https://3psolutions.ca" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300">3psolutions.ca</a><div className="flex items-center gap-3"><SocialIconLink href="https://www.linkedin.com/in/brent-pattison-canada/" label="Brent Pattison on LinkedIn" dark><LinkedInIcon /></SocialIconLink><SocialIconLink href="https://x.com/3PSolutionsCA" label="3P Solutions on X" dark><XIcon /></SocialIconLink></div></div></div>
+      <section className="bg-slate-950 py-20 text-white">
+        <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">
+          <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Start here</p>
+          <h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">Where is your contact centre leaving value on the table?</h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+            Find the biggest gaps, the real root causes, and what to fix first.
+          </p>
+          <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
+            <a href="/cx-ai-technology-gap-review" className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-7 py-4 font-black text-slate-950 transition hover:bg-cyan-400">
+              Assess Your Contact Centre <ArrowRight className="h-5 w-5" />
+            </a>
+            <a href="https://calendly.com/brent3p/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full border border-white/20 px-7 py-4 font-black text-white transition hover:bg-white/10">
+              Book a 30-Minute Fit Call
+            </a>
+          </div>
+        </div>
       </section>
 
       <footer className="border-t border-slate-800 bg-slate-950 px-5 py-8 text-sm text-slate-400 lg:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between"><p>© {new Date().getFullYear()} 3P Solutions. All rights reserved.</p><div className="flex flex-wrap gap-x-5 gap-y-2"><a href="mailto:brent@3psolutions.ca" className="hover:text-cyan-300">brent@3psolutions.ca</a><a href="tel:+15198352374" className="hover:text-cyan-300">519-835-2374</a><a href="https://3psolutions.ca" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300">3psolutions.ca</a></div></div>
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <p>© {new Date().getFullYear()} 3P Solutions. All rights reserved.</p>
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
+            <a href="mailto:brent@3psolutions.ca" className="hover:text-cyan-300">brent@3psolutions.ca</a>
+            <a href="tel:+15198352374" className="hover:text-cyan-300">519-835-2374</a>
+          </div>
+        </div>
       </footer>
     </main>
   );
