@@ -5,6 +5,7 @@ const baseUrl = "https://www.3psolutions.ca";
 const routes = [
   "/",
   "/contact-centre-consulting",
+  "/3p-framework",
   "/contact-centre-operating-model",
   "/bpo-outsourcing-optimization",
   "/contact-centre-technology-ai",
@@ -26,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority:
       route === "/"
         ? 1
-        : route === "/contact-centre-consulting"
+        : route === "/contact-centre-consulting" || route === "/3p-framework"
           ? 0.95
           : route === "/contact-centre-operating-model" || route === "/bpo-outsourcing-optimization" || route === "/contact-centre-technology-ai" || route === "/contact-centre-insourcing-outsourcing-strategy"
             ? 0.9
