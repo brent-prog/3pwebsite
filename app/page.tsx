@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "./components/SiteHeader";
 import {
   ArrowRight,
@@ -169,7 +170,7 @@ export default function Home() {
       <section id="framework" className="bg-white py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">The 3P lens</p>
+            <Link href="/3p-framework" className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.2em] text-cyan-700 hover:text-cyan-900">The 3P Lens <ArrowRight className="h-4 w-4" /></Link>
             <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">People. Product. Profit.</h2>
             <p className="mt-5 text-lg leading-8 text-slate-700">
               A better employee experience. A better customer experience. Better business results. If one breaks, the contact centre feels it.
