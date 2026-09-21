@@ -76,7 +76,7 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:py-28">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 text-sm font-bold text-cyan-800">
-              <TrendingUp className="h-4 w-4" /> Making Businesses More Valuable
+              <Headphones className="h-4 w-4" /> Contact Centres | CX | BPO | AI
             </div>
             <h1 className="mt-6 max-w-4xl text-5xl font-black leading-[1.02] tracking-tight md:text-7xl">
               Make your contact centre worth more to the business.
