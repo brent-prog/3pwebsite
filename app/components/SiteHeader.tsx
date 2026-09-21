@@ -7,7 +7,7 @@ import { ArrowRight, Menu, X } from "lucide-react";
 const navItems = [
   { label: "Consulting", href: "/contact-centre-consulting" },
   { label: "Services", href: "/#services" },
-  { label: "3P Framework", href: "/#framework" },
+  { label: "3P Framework", href: "/3p-framework" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Blog", href: "/blog" },
 ];
