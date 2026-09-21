@@ -76,7 +76,7 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:py-28">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 text-sm font-bold text-cyan-800">
-              <Headphones className="h-4 w-4" /> Contact Centres | CX | BPO | AI
+              <TrendingUp className="h-4 w-4" /> Making Businesses More Valuable
             </div>
             <h1 className="mt-6 max-w-4xl text-5xl font-black leading-[1.02] tracking-tight md:text-7xl">
               Make your contact centre worth more to the business.
@@ -210,7 +210,7 @@ export default function Home() {
 
       <footer className="border-t border-slate-800 bg-slate-950 px-5 py-8 text-sm text-slate-400 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} 3P Solutions. All rights reserved.</p>
+          <div><p className="font-bold text-white">3P Solutions</p><p className="mt-1">Making Businesses More Valuable</p></div>
           <div className="flex flex-wrap gap-x-5 gap-y-2">
             <a href="mailto:brent@3psolutions.ca" className="hover:text-cyan-300">brent@3psolutions.ca</a>
             <a href="tel:+15198352374" className="hover:text-cyan-300">519-835-2374</a>
