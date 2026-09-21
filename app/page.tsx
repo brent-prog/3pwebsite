@@ -172,12 +172,12 @@ export default function Home() {
             <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">The 3P lens</p>
             <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">People. Product. Profit.</h2>
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              Better employee performance. Better customer experience. Better business results. If one breaks, the contact centre feels it.
+              A better employee experience. A better customer experience. Better business results. If one breaks, the contact centre feels it.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-3">
             {[
-              ["People", "Can employees and leaders execute consistently?"],
+              ["People", "Do employees want to be part of the business - engaged, supported, capable, and able to do great work?"],
               ["Product", "Does the customer get the experience the business intends?"],
               ["Profit", "Does the operation create or protect measurable value?"],
             ].map(([title, text]) => (
