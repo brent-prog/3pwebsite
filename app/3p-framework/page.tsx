@@ -190,7 +190,7 @@ export default function ThreePFrameworkPage() {
         </div>
       </section>
 
-      <section className="bg-cyan-50 py-20">
+      <section id="praise-book" className="bg-cyan-50 py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-4xl">
             <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-800">The full system</p>
@@ -288,32 +288,18 @@ export default function ThreePFrameworkPage() {
         </div>
       </section>
 
-      <section className="bg-slate-950 py-20 text-white">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
-            <div>
-              <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">From framework to behaviour</p>
-              <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">
-                PRAISE is where the system gets personal.
-              </h2>
-              <p className="mt-5 text-lg leading-8 text-slate-300">
-                A business does not improve because a framework exists on a slide. It improves when people change what they do. PRAISE was built to help managers coach specific behaviours, connect the change to WIIFT, follow up, and recognize people when they get it right.
-              </p>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {[
-                ["Prepare", "Know the person, performance, point of focus, behaviour, and desired result."],
-                ["Present", "Make the coaching specific, personal, clear, and actionable."],
-                ["Follow up", "Observe what happens next. Coaching is not a one-and-done conversation."],
-                ["Praise", "Recognize the behaviour, effort, and persistence you want repeated."],
-              ].map(([title, text]) => (
-                <div key={title} className="rounded-3xl border border-white/10 bg-white/10 p-6">
-                  <p className="text-xl font-black text-cyan-300">{title}</p>
-                  <p className="mt-3 text-sm leading-6 text-slate-300">{text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+      <section className="bg-slate-950 py-16 text-white">
+        <div className="mx-auto max-w-5xl px-5 lg:px-8">
+          <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">3P Coaching</p>
+          <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">
+            Preparing. Presenting. Praise.
+          </h2>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">
+            Strategy only matters if it changes behaviour. 3P Coaching helps leaders turn expectations into better day-to-day performance through clear, personal, behaviour-focused coaching and meaningful recognition.
+          </p>
+          <a href="#praise-book" className="mt-7 inline-flex items-center gap-2 font-black text-cyan-300 hover:text-cyan-200">
+            Explore PRAISE Coaching <ArrowRight className="h-4 w-4" />
+          </a>
         </div>
       </section>
 
