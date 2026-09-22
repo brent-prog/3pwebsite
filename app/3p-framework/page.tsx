@@ -75,7 +75,7 @@ const management = [
   },
   {
     title: "Processes",
-    text: "Build simple, documented, repeatable ways of working that support the plan.",
+    text: "Processes include the workflows, technology, tools, and incentives people rely on to execute the plan consistently.",
   },
   {
     title: "Performance Measurement",
@@ -102,7 +102,7 @@ const principles = [
   "Employee experience and customer experience are connected.",
   "Business results improve when the system works for people, customers, and owners at the same time.",
   "Plans are useless without execution.",
-  "Processes should be simple enough to follow and strong enough to scale.",
+  "Processes should be simple enough to follow and strong enough to scale - with technology that enables the work and incentives that reinforce the right behaviours.",
   "What gets measured gets managed - so measure the right things.",
   "Coach behaviours, not just outcomes.",
   "WIIFT matters: people change faster when they understand what's in it for them.",
@@ -144,7 +144,7 @@ export default function ThreePFrameworkPage() {
               A complete system for making businesses more valuable.
             </h1>
             <p className="mt-7 max-w-3xl text-xl leading-8 text-slate-300 md:text-2xl">
-              Better businesses are not built by fixing one department at a time. They are built by aligning the people, the customer value, the economics, the leadership, the management system, and the conversations that drive behaviour every day.
+              Better businesses are not built by fixing one department at a time. They are built by aligning the people, the customer value, the economics, the leadership, the processes, the technology, the incentives, and the conversations that drive behaviour every day.
             </p>
           </div>
 
@@ -152,7 +152,7 @@ export default function ThreePFrameworkPage() {
             {[
               ["Business", "People · Product · Profit"],
               ["Leadership", "Purpose · Principles · Progress"],
-              ["Management", "Planning · Processes · Performance"],
+              ["Management", "Planning · Processes + Tech + Incentives · Performance"],
               ["Coaching", "Preparing · Presenting · Praise"],
             ].map(([title, text]) => (
               <div key={title} className="rounded-3xl border border-white/10 bg-white/10 p-6">
@@ -198,7 +198,7 @@ export default function ThreePFrameworkPage() {
               The business outcome is only the beginning.
             </h2>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-700">
-              People, Product, and Profit define the value we are trying to create. Leadership gives the business direction. Management turns that direction into a system. Coaching turns the system into daily behaviour.
+              People, Product, and Profit define the value we are trying to create. Leadership gives the business direction. Management turns that direction into an operating system - planning the work, designing the processes, enabling them with technology, aligning incentives, and measuring performance. Coaching turns the system into daily behaviour.
             </p>
           </div>
 
@@ -221,6 +221,7 @@ export default function ThreePFrameworkPage() {
               <Gauge className="h-9 w-9 text-cyan-300" />
               <p className="mt-5 text-sm font-black uppercase tracking-[0.18em] text-cyan-300">3P Management</p>
               <h3 className="mt-2 text-3xl font-black">Planning. Processes. Performance.</h3>
+              <p className="mt-3 text-sm font-bold text-cyan-700">Processes include Technology &amp; Incentives.</p>
               <div className="mt-6 space-y-5">
                 {management.map((item) => (
                   <div key={item.title}>
@@ -256,7 +257,7 @@ export default function ThreePFrameworkPage() {
               Test whether the management system actually supports the business.
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              The 3Px3P Matrix connects Planning, Processes, and Performance Measurement to People, Product, and Profit. It turns a simple idea into a practical diagnostic: where is the business aligned, where is it disconnected, and where is value leaking?
+              The 3Px3P Matrix connects Planning, Processes, and Performance Measurement to People, Product, and Profit. In the Processes layer, that includes the technology enabling the work and the incentives shaping behaviour. The matrix turns a simple idea into a practical diagnostic: where is the business aligned, where is it disconnected, and where is value leaking?
             </p>
             <Link href="/blog/3px3p-matrix-business-alignment" className="mt-7 inline-flex items-center gap-2 font-black text-cyan-800">
               Read the 3Px3P article <ArrowRight className="h-4 w-4" />
@@ -272,7 +273,7 @@ export default function ThreePFrameworkPage() {
             </div>
             {[
               ["Planning", "Right people", "Right promise", "Right economics"],
-              ["Processes", "Right support", "Right delivery", "Right efficiency"],
+              ["Processes + Tech + Incentives", "Right people + incentives", "Right process + technology", "Right efficiency + economics"],
               ["Performance", "Right behaviours", "Right outcomes", "Right results"],
             ].map((row) => (
               <div key={row[0]} className="grid grid-cols-4 border-t border-slate-200 text-sm">
@@ -378,7 +379,7 @@ export default function ThreePFrameworkPage() {
               Brent Pattison built the 3P framework from more than 30 years of leading, scaling, fixing, and transforming businesses and customer operations. The recurring lesson was simple: most performance problems are not isolated problems. They are alignment problems.
             </p>
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              The framework became a way to simplify those connections - from employee experience and customer experience to business economics, from leadership intent to management execution, and from management systems to the coaching conversations that shape behaviour.
+              The framework became a way to simplify those connections - from employee experience and customer experience to business economics, from leadership intent to management execution, and from processes, technology, incentives, and performance systems to the coaching conversations that shape behaviour.
             </p>
             <Link href="/case-studies" className="mt-7 inline-flex items-center gap-2 font-black text-cyan-800">
               See the transformation work <ArrowRight className="h-4 w-4" />
