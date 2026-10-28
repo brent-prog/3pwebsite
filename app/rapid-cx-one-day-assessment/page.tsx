@@ -42,9 +42,9 @@ const proof = [
 const assessmentBooking = "https://calendly.com/brent3p/30min";
 const assessmentEmail = `mailto:brent@3psolutions.ca?subject=${encodeURIComponent("Enquiry - Rapid CX One-Day Assessment")}&body=${encodeURIComponent("Hi Brent,\n\nI'm interested in learning more about the Rapid CX One-Day Assessment for our business.\n\nCompany: \nApproximate number of frontline employees: \nQuestions or comments: \n\nThanks,\n")}`;
 
-function Cta({ secondary = false }: { secondary?: boolean }) {
+function Cta({ secondary = false, centered = false }: { secondary?: boolean; centered?: boolean }) {
   return (
-    <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
+    <div className={`flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap ${centered ? "mx-auto items-center justify-center" : ""}`}>
       <a href={assessmentEmail}
         className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-6 py-4 text-center text-base font-black text-slate-950 shadow-lg shadow-cyan-500/15 transition hover:bg-cyan-400">
         Email to Enquire <ArrowRight className="h-5 w-5" />
@@ -223,7 +223,7 @@ export default function ContactCentrePerformanceAssessment() {
           <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Start with one conversation</p>
           <h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">You don't need another quarter of reports to find out what you're missing.</h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">Request the assessment and we'll confirm your operation qualifies, agree on the scope and outline the next steps.</p>
-          <div className="mt-9 flex justify-center"><Cta /></div>
+          <div className="mt-9 flex w-full justify-center"><Cta centered /></div>
           <p className="mt-6 text-sm text-slate-400">Prefer to call? <a className="font-bold text-cyan-300 hover:text-white" href="tel:+15198352374">519-835-2374</a></p>
         </div>
       </section>
