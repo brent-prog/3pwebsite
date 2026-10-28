@@ -39,13 +39,13 @@ const proof = [
   { number: "35,000", label: "Employees supported", detail: "Executive support-services leadership across nine countries." },
 ];
 
-const assessmentRequest = "mailto:brent@3psolutions.ca?subject=Rapid%20CX%20One-Day%20Assessment%20Request&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20discuss%20the%20Rapid%20CX%20One-Day%20Assessment.%0A%0ACompany%3A%20%0AApproximate%20frontline%20team%20size%3A%20%0A%0AThanks%2C%0A";
+const assessmentBooking = "https://calendly.com/brent3p/30min";
 
 function Cta({ secondary = false }: { secondary?: boolean }) {
   return (
-    <a href={assessmentRequest}
+    <a href={assessmentBooking} target="_blank" rel="noopener noreferrer"
       className={`inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-black transition ${secondary ? "border border-slate-300 bg-white text-slate-950 hover:border-cyan-500 hover:text-cyan-700" : "bg-cyan-500 text-slate-950 shadow-lg shadow-cyan-500/15 hover:bg-cyan-400"}`}>
-      Request Your Rapid CX Assessment <ArrowRight className="h-5 w-5" />
+      Schedule Your Rapid CX Assessment Call <ArrowRight className="h-5 w-5" />
     </a>
   );
 }
