@@ -116,20 +116,12 @@ export default function ContactCentrePerformanceAssessment() {
 
       <section className="bg-cyan-50 py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="grid items-start gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
-            <div>
+          <div className="max-w-4xl">
               <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-800">Why 3P Solutions</p>
               <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">I've built businesses, led global operations and delivered the results.</h2>
               <p className="mt-5 text-lg leading-8 text-slate-700">I'm Brent Pattison. I spent decades responsible for some of the world's largest and most complex contact centre and BPO operations, making decisions about people, customers, technology and profit at scale.</p>
               <p className="mt-4 text-lg leading-8 text-slate-700">But that's only part of the story. I've also built and grown businesses, helped owners prepare companies for acquisition, and worked with private equity-backed groups to find improvements across acquired operations. I understand what those operating decisions mean for profitability, growth and business value.</p>
               <p className="mt-4 text-lg font-bold leading-8 text-slate-950">You aren't buying another opinion about your contact centre. You're getting the perspective of someone who's had to make the decisions, deliver the results and live with the numbers.</p>
-            </div>
-            <div className="rounded-3xl border border-cyan-200 bg-white p-7 shadow-sm">
-              <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-800">Beyond the contact centre</p>
-              <h3 className="mt-3 text-2xl font-black tracking-tight">Building value in the business itself.</h3>
-              <p className="mt-4 leading-7 text-slate-700">From growing and selling an independently operated service business to strengthening operating models for acquisition and integration, my work has always come back to the same question: what will make this business perform better and become more valuable?</p>
-              <a href="/case-studies" className="mt-6 inline-flex items-center gap-2 font-black text-cyan-900 hover:text-cyan-700">See the work behind 3P <ArrowRight className="h-4 w-4" /></a>
-            </div>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {proof.map(({ number, label, detail }) => (
