@@ -223,7 +223,7 @@ export default function ContactCentrePerformanceAssessment() {
           <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Start with one conversation</p>
           <h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">You don't need another quarter of reports to find out what you're missing.</h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">Request the assessment and we'll confirm your operation qualifies, agree on the scope and outline the next steps.</p>
-          <div className="mt-9"><Cta /></div>
+          <div className="mt-9 flex justify-center"><Cta /></div>
           <p className="mt-6 text-sm text-slate-400">Prefer to call? <a className="font-bold text-cyan-300 hover:text-white" href="tel:+15198352374">519-835-2374</a></p>
         </div>
       </section>
