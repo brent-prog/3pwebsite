@@ -40,7 +40,7 @@ const proof = [
 ];
 
 const assessmentBooking = "https://calendly.com/brent3p/30min";
-const assessmentEmail = `mailto:brent@3psolutions.ca?subject=${encodeURIComponent("Enquiry - Rapid CX One-Day Assessment")}&body=${encodeURIComponent("Hi Brent,\\n\\nI'm interested in learning more about the Rapid CX One-Day Assessment for our business.\\n\\nCompany: \\nApproximate number of frontline employees: \\nQuestions or comments: \\n\\nThanks,\\n")}`;
+const assessmentEmail = `mailto:brent@3psolutions.ca?subject=${encodeURIComponent("Enquiry - Rapid CX One-Day Assessment")}&body=${encodeURIComponent("Hi Brent,\n\nI'm interested in learning more about the Rapid CX One-Day Assessment for our business.\n\nCompany: \nApproximate number of frontline employees: \nQuestions or comments: \n\nThanks,\n")}`;
 
 function Cta({ secondary = false }: { secondary?: boolean }) {
   return (
