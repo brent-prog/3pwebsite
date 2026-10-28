@@ -39,13 +39,13 @@ const proof = [
   { number: "35,000", label: "Employees supported", detail: "Executive support-services leadership across nine countries." },
 ];
 
-const booking = "https://calendly.com/brent3p/30min";
+const assessmentRequest = "mailto:brent@3psolutions.ca?subject=Rapid%20CX%20One-Day%20Assessment%20Request&body=Hi%20Brent%2C%0A%0AI%27d%20like%20to%20discuss%20the%20Rapid%20CX%20One-Day%20Assessment.%0A%0ACompany%3A%20%0AApproximate%20frontline%20team%20size%3A%20%0A%0AThanks%2C%0A";
 
 function Cta({ secondary = false }: { secondary?: boolean }) {
   return (
-    <a href={booking} target="_blank" rel="noopener noreferrer"
+    <a href={assessmentRequest}
       className={`inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-black transition ${secondary ? "border border-slate-300 bg-white text-slate-950 hover:border-cyan-500 hover:text-cyan-700" : "bg-cyan-500 text-slate-950 shadow-lg shadow-cyan-500/15 hover:bg-cyan-400"}`}>
-      Book a 30-Minute Fit Call <ArrowRight className="h-5 w-5" />
+      Request Your Rapid CX Assessment <ArrowRight className="h-5 w-5" />
     </a>
   );
 }
@@ -135,7 +135,7 @@ export default function ContactCentrePerformanceAssessment() {
           </div>
           <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
             <Cta secondary />
-            <span className="text-sm font-semibold text-slate-600">See if your operation is a fit. No obligation.</span>
+            <span className="text-sm font-semibold text-slate-600">We will confirm the scope and next steps. No obligation.</span>
           </div>
         </div>
       </section>
@@ -223,7 +223,7 @@ export default function ContactCentrePerformanceAssessment() {
         <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">
           <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">Start with one conversation</p>
           <h2 className="mt-3 text-4xl font-black tracking-tight md:text-6xl">You don't need another quarter of reports to find out what you're missing.</h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">Let's determine whether your operation qualifies, agree on the scope and see if this assessment makes sense for your business.</p>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">Request the assessment and we'll confirm your operation qualifies, agree on the scope and outline the next steps.</p>
           <div className="mt-9"><Cta /></div>
           <p className="mt-6 text-sm text-slate-400">Or email <a className="font-bold text-cyan-300 hover:text-white" href="mailto:brent@3psolutions.ca">brent@3psolutions.ca</a> · <a className="font-bold text-cyan-300 hover:text-white" href="tel:+15198352374">519-835-2374</a></p>
         </div>
