@@ -133,6 +133,10 @@ export default function ContactCentrePerformanceAssessment() {
               </div>
             ))}
           </div>
+          <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+            <Cta secondary />
+            <span className="text-sm font-semibold text-slate-600">See if your operation is a fit. No obligation.</span>
+          </div>
         </div>
       </section>
 
@@ -178,6 +182,7 @@ export default function ContactCentrePerformanceAssessment() {
                 <div><h3 className="text-lg font-black">{title}</h3><p className="mt-1 leading-7 text-slate-300">{body}</p></div>
               </div>
             ))}
+            <div className="pt-3"><Cta /></div>
           </div>
         </div>
       </section>
