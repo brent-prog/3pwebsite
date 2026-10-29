@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SiteHeader from "../components/SiteHeader";
+import Image from "next/image";
 import {
   ArrowRight, CheckCircle2, Headphones, Users, MonitorCog, Target, TrendingUp,
   ClipboardCheck, Building2, Layers3, BriefcaseBusiness, Clock3, BadgeCheck,
@@ -60,7 +60,17 @@ function Cta({ secondary = false, centered = false }: { secondary?: boolean; cen
 export default function ContactCentrePerformanceAssessment() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
-      <SiteHeader />
+      <header className="border-b border-slate-200 bg-white">
+        <div className="mx-auto flex max-w-7xl items-center px-5 py-4 lg:px-8">
+          <a href="/" className="flex items-center gap-3" aria-label="3P Solutions home">
+            <Image src="/3p-logo.png" alt="3P Solutions logo" width={56} height={56} className="h-12 w-auto" priority />
+            <div>
+              <p className="text-sm font-black tracking-wide text-slate-950">3P SOLUTIONS</p>
+              <p className="text-xs text-slate-500">Making Businesses More Valuable</p>
+            </div>
+          </a>
+        </div>
+      </header>
 
       <section className="relative overflow-hidden bg-slate-950 text-white">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950" />
