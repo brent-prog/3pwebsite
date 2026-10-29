@@ -9,6 +9,7 @@ const navItems = [
   { label: "Services", href: "/#services" },
   { label: "3P Framework", href: "/3p-framework" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "About", href: "/about/" },
   { label: "Blog", href: "/blog" },
 ];
 
