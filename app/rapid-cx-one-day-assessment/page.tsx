@@ -60,7 +60,7 @@ function Cta({ secondary = false, centered = false }: { secondary?: boolean; cen
 export default function ContactCentrePerformanceAssessment() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
-      <header className="border-b border-slate-200 bg-white">
+      <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center px-5 py-4 lg:px-8">
           <a href="/" className="flex items-center gap-3" aria-label="3P Solutions home">
             <Image src="/3p-logo.png" alt="3P Solutions logo" width={56} height={56} className="h-12 w-auto" priority />
